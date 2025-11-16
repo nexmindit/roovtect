@@ -2,10 +2,29 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 export default function Navbar() {
   const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const timeoutRef = useRef<number | null>(null);
+
+  const clearCloseTimeout = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
+  };
+
+  const handleMouseEnter = () => {
+    clearCloseTimeout();
+    setIsProductsOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = window.setTimeout(() => {
+      setIsProductsOpen(false);
+    }, 200);
+  };
 
   return (
     <nav className="bg-[#DBD6D1] sticky top-0 z-50">
@@ -36,8 +55,8 @@ export default function Navbar() {
             {/* Products & Services Dropdown */}
             <div
               className="relative group"
-              onMouseEnter={() => setIsProductsOpen(true)}
-              onMouseLeave={() => setIsProductsOpen(false)}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
             >
               <button className="text-[#314556] hover:text-[#1e2a35] font-medium transition-colors flex items-center">
                 Products & Services
@@ -62,8 +81,8 @@ export default function Navbar() {
               {isProductsOpen && (
                 <div
                   className="absolute left-0 mt-2 w-64 bg-[#314556] rounded-md shadow-lg py-2 z-50"
-                  onMouseEnter={() => setIsProductsOpen(true)}
-                  onMouseLeave={() => setIsProductsOpen(false)}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
                 >
                   <Link
                     href="/products/shinkolite"

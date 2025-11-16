@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 interface HeroNavbarProps {
   transparent?: boolean;
@@ -10,6 +10,25 @@ interface HeroNavbarProps {
 
 export default function HeroNavbar({ transparent = false }: HeroNavbarProps) {
   const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const timeoutRef = useRef<number | null>(null);
+
+  const clearCloseTimeout = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
+  };
+
+  const handleMouseEnter = () => {
+    clearCloseTimeout();
+    setIsProductsOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = window.setTimeout(() => {
+      setIsProductsOpen(false);
+    }, 200);
+  };
 
   return (
     <nav
@@ -44,8 +63,9 @@ export default function HeroNavbar({ transparent = false }: HeroNavbarProps) {
             {/* Products & Services Dropdown */}
             <div
               className="relative group"
-              onMouseEnter={() => setIsProductsOpen(true)}
-              onMouseLeave={() => setIsProductsOpen(false)}
+              // 3. Use the new handlers on the main button container
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
             >
               <button className="text-white hover:text-gray-200 font-medium transition-colors flex items-center">
                 Products & Services
@@ -70,9 +90,11 @@ export default function HeroNavbar({ transparent = false }: HeroNavbarProps) {
               {isProductsOpen && (
                 <div
                   className="absolute left-0 mt-2 w-64 bg-[#314556] rounded-md shadow-lg py-2 z-50"
-                  onMouseEnter={() => setIsProductsOpen(true)}
-                  onMouseLeave={() => setIsProductsOpen(false)}
+                  // 4. Also use the new handlers on the dropdown menu itself
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
                 >
+                  {/* ... Dropdown links content (same as original) ... */}
                   <Link
                     href="/products/shinkolite"
                     className="block px-4 py-2 text-white hover:bg-[#3d5668] transition-colors"

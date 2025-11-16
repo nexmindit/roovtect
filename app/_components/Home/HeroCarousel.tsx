@@ -86,7 +86,7 @@ export default function HeroCarousel() {
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
     setIsAutoPlaying(false);
-    setTimeout(() => setIsAutoPlaying(true), 10000);
+    setTimeout(() => setIsAutoPlaying(true), 7000);
   };
 
   return (
@@ -184,7 +184,7 @@ export default function HeroCarousel() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 backdrop-blur-sm hover:bg-white/40 text-white p-3 rounded-full transition-all"
+        className="cursor-pointer absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 backdrop-blur-sm hover:bg-white/40 text-white p-3 rounded-full transition-all"
         aria-label="Previous slide"
       >
         <svg
@@ -204,7 +204,7 @@ export default function HeroCarousel() {
 
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 backdrop-blur-sm hover:bg-white/40 text-white p-3 rounded-full transition-all"
+        className="cursor-pointer absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 backdrop-blur-sm hover:bg-white/40 text-white p-3 rounded-full transition-all"
         aria-label="Next slide"
       >
         <svg
