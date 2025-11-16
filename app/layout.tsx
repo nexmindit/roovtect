@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Footer from "./_components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rooftect",
-  description: "",
+  title: "Roovtect - Premium Roofing Solutions",
+  description:
+    "ROOVTECT by SASICHAVIKITCO.,LTD. - Professional roofing and carport solutions",
 };
 
 export default function RootLayout({
@@ -28,6 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );
