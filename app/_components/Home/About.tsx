@@ -4,7 +4,7 @@ import React from "react";
 const About = () => {
   return (
     <div className="w-full py-24 flex flex-col justify-center items-center px-4 md:px-12 lg:px-52 bg-white text-[#3d4f5e]">
-      <h1 className="text-3xl font-semibold">
+      <h1 className="text-center text-3xl font-semibold">
         ROOVTECT รับต่อเติมหลังคาโรงรถ หลังคาบ้าน กันสาด ราคาคุ้มค่า
       </h1>
       <p className="text-center mt-4 text-lg">
