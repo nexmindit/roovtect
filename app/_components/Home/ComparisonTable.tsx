@@ -32,7 +32,7 @@ const tableData = [
 
 export default function ComparisonTable() {
   return (
-    <section className="w-full bg-[#EAE8E4] py-16 md:py-24 px-4">
+    <section className="w-full bg-[#EAE8E4] py-16 px-4">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-[#314556] text-center mb-12">
           เปรียบเทียบวัสดุหลังคาโรงจอดรถและกันสาดแบบ Knockdown จาก ROOVTECT
