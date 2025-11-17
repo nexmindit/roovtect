@@ -28,7 +28,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-[#DBD6D1] sticky top-0 z-50">
-      <div className="px-10 py-4">
+      <div className="px-10 py-3">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="shrink-0">
