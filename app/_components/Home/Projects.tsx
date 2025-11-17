@@ -22,9 +22,9 @@ const garageProjects: ProjectFeature[] = [
       "ตัวแผ่นหนากว่า 6 มิลลิเมตร แข็งแรงทนทาน",
     ],
     images: [
-      "https://placehold.co/800x450/cccccc/314556?text=Image+1",
-      "https://placehold.co/800x450/cccccc/314556?text=Image+2",
-      "https://placehold.co/800x450/cccccc/314556?text=Image+3",
+      "https://roovtect.com/wp-content/uploads/2024/12/20-06-12-21-18-23-691_deco-1.jpg",
+      "https://roovtect.com/wp-content/uploads/2024/12/DSC09096-1-1536x864.jpg",
+      "https://roovtect.com/wp-content/uploads/2024/12/20-09-25-19-26-01-114_deco-1536x863.jpg",
     ],
     href: "/shinkolite",
   },
@@ -38,9 +38,9 @@ const garageProjects: ProjectFeature[] = [
       "รับประกันตัวแผ่นนาน 10 ปี",
     ],
     images: [
-      "https://placehold.co/800x450/cccccc/314556?text=Image+1",
-      "https://placehold.co/800x450/cccccc/314556?text=Image+2",
-      "https://placehold.co/800x450/cccccc/314556?text=Image+3",
+      "https://roovtect.com/wp-content/uploads/2024/12/solid4-1536x1026.jpg",
+      "https://roovtect.com/wp-content/uploads/2024/12/solid3-1536x1026.jpg",
+      "https://roovtect.com/wp-content/uploads/2024/12/solid2-1536x1026.jpg",
     ],
     href: "/solid-sheet",
   },
@@ -52,9 +52,9 @@ const garageProjects: ProjectFeature[] = [
       "คุณสมบัติช่วยดูดซับเสียงกระทบของน้ำฝนบนหลังคา",
     ],
     images: [
-      "https://placehold.co/800x450/cccccc/314556?text=Image+1",
-      "https://placehold.co/800x450/cccccc/314556?text=Image+2",
-      "https://placehold.co/800x450/cccccc/314556?text=Image+3",
+      "https://roovtect.com/wp-content/uploads/2023/07/03-solution-03-vinyl-1.webp",
+      "https://roovtect.com/wp-content/uploads/2023/07/03-solution-03-vinyl-2.webp",
+      "https://roovtect.com/wp-content/uploads/2023/07/03-solution-03-vinyl-3.webp",
     ],
     href: "/smart-vinyl",
   },
@@ -66,9 +66,9 @@ const garageProjects: ProjectFeature[] = [
       "คุณสมบัติช่วยลดการส่งผ่านความร้อนให้ดียิ่งขึ้น",
     ],
     images: [
-      "https://placehold.co/800x450/cccccc/314556?text=Image+1",
-      "https://placehold.co/800x450/cccccc/314556?text=Image+2",
-      "https://placehold.co/800x450/cccccc/314556?text=Image+3",
+      "https://roovtect.com/wp-content/uploads/2023/07/03-solution-04-shadeseriesl-1.webp",
+      "https://roovtect.com/wp-content/uploads/2023/07/03-solution-04-shadeseriesl-2.webp",
+      "https://roovtect.com/wp-content/uploads/2023/07/03-solution-04-shadeseriesl-.3.webp",
     ],
     href: "/shade-series",
   },
@@ -81,9 +81,9 @@ const garageProjects: ProjectFeature[] = [
       "ดีไซน์ด้วยความพิถีพิถัน เป็นหนึ่งเดียวกับบ้านของคุณได้อย่างลงตัว",
     ],
     images: [
-      "https://placehold.co/800x450/cccccc/314556?text=Image+1",
-      "https://placehold.co/800x450/cccccc/314556?text=Image+2",
-      "https://placehold.co/800x450/cccccc/314556?text=Image+3",
+      "https://roovtect.com/wp-content/uploads/2024/05/Solution-Car-Port-1_result-1024x549.webp",
+      "https://roovtect.com/wp-content/uploads/2024/05/Solution-Car-Port-2_result-1536x824.webp",
+      "https://roovtect.com/wp-content/uploads/2024/05/Solution-Car-Port-3_result-1536x824.webp",
     ],
     href: "/aluminum-car-port",
   },
@@ -98,9 +98,9 @@ const garageProjects: ProjectFeature[] = [
       "ลดการทรุดตัวของพื้นระแนงไม้เดิม",
     ],
     images: [
-      "https://placehold.co/800x450/cccccc/314556?text=Image+1",
-      "https://placehold.co/800x450/cccccc/314556?text=Image+2",
-      "https://placehold.co/800x450/cccccc/314556?text=Image+3",
+      "https://roovtect.com/wp-content/uploads/2023/07/03-solution-05-terrace-01.webp",
+      "https://roovtect.com/wp-content/uploads/2023/07/03-solution-05-terrace-02.webp",
+      "https://roovtect.com/wp-content/uploads/2023/07/03-solution-05-terrace-03.webp",
     ],
     href: "/terrace",
   },
@@ -116,9 +116,9 @@ const facadeProjects: ProjectFeature[] = [
       "ได้รับการออกแบบอย่างพิถีพิถัน โดย Jun Sekino จาก Junsekino Architect and Design",
     ],
     images: [
-      "https://placehold.co/800x450/cccccc/314556?text=Image+1",
-      "https://placehold.co/800x450/cccccc/314556?text=Image+2",
-      "https://placehold.co/800x450/cccccc/314556?text=Image+3",
+      "https://roovtect.com/wp-content/uploads/2023/07/home-ROOVTECT-Solution-01-1536x824.webp",
+      "https://roovtect.com/wp-content/uploads/2023/07/home-ROOVTECT-Solution-02-1536x824.webp",
+      "https://roovtect.com/wp-content/uploads/2023/07/home-ROOVTECT-Solution-03-1536x824.webp",
     ],
     href: "/link-facade",
   },
@@ -131,9 +131,9 @@ const facadeProjects: ProjectFeature[] = [
       "เพิ่มความโดดเด่น ในทุกมุมมองของที่อยู่อาศัย",
     ],
     images: [
-      "https://placehold.co/800x450/cccccc/314556?text=Image+1",
-      "https://placehold.co/800x450/cccccc/314556?text=Image+2",
-      "https://placehold.co/800x450/cccccc/314556?text=Image+3",
+      "https://roovtect.com/wp-content/uploads/2024/05/Solution-FinShade-1_result-1536x824.webp",
+      "https://roovtect.com/wp-content/uploads/2024/05/Solution-FinShade-2_result-1536x824.webp",
+      "https://roovtect.com/wp-content/uploads/2024/05/Solution-FinShade-3_result-1536x824.webp",
     ],
     href: "/fin-shade",
   },
@@ -147,9 +147,9 @@ const facadeProjects: ProjectFeature[] = [
       "เพิ่มความรู้สึกอบอุ่นเหมือนได้อยู่ใกล้ชิดธรรมชาติ",
     ],
     images: [
-      "https://placehold.co/800x450/cccccc/314556?text=Image+1",
-      "https://placehold.co/800x450/cccccc/314556?text=Image+2",
-      "https://placehold.co/800x450/cccccc/314556?text=Image+3",
+      "https://roovtect.com/wp-content/uploads/2024/05/Solution-Aron-1_result-1536x824.webp",
+      "https://roovtect.com/wp-content/uploads/2024/05/Solution-Aron-2_result-1536x824.webp",
+      "https://roovtect.com/wp-content/uploads/2024/05/Solution-Aron-3_result-1536x824.webp",
     ],
     href: "/aron",
   },
@@ -162,29 +162,111 @@ const ProjectItem: React.FC<ProjectFeature> = ({
   href,
 }) => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = React.useState(true);
+  const totalImages = images.length;
+
+  React.useEffect(() => {
+    if (!isAutoPlaying) return;
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % totalImages);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [isAutoPlaying, totalImages]);
+
+  const pauseAutoPlay = () => {
+    setIsAutoPlaying(false);
+    setTimeout(() => setIsAutoPlaying(true), 7000);
+  };
+
+  const goToSlide = (index: number) => {
+    setCurrentIndex(index);
+    pauseAutoPlay();
+  };
+
+  const goToNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % totalImages);
+    pauseAutoPlay();
+  };
+
+  const goToPrev = () => {
+    setCurrentIndex((prev) => (prev - 1 + totalImages) % totalImages);
+    pauseAutoPlay();
+  };
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center">
       <div className="w-full">
-        <div className="relative w-full aspect-video overflow-hidden">
-          <Image
-            src={images[currentIndex]}
-            alt={title}
-            layout="fill"
-            objectFit="cover"
-            className="transition-opacity duration-300"
-          />
-        </div>
-        <div className="flex justify-center items-center gap-2 pt-4">
-          {images.map((_, index) => (
-            <button
+        <div className="relative w-full aspect-[16/9] overflow-hidden">
+          {images.map((src, index) => (
+            <Image
               key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`w-3 h-3 rounded-full transition-colors ${
-                currentIndex === index ? "bg-white" : "bg-gray-500"
+              src={src}
+              alt={title}
+              fill
+              objectFit="cover"
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
               }`}
+              priority={index === 0}
             />
           ))}
+
+          <button
+            onClick={goToPrev}
+            className="cursor-pointer absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-black/20 backdrop-blur-sm hover:bg-white/40 text-white p-3 rounded-full transition-all"
+            aria-label="Previous slide"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+
+          <button
+            onClick={goToNext}
+            className="cursor-pointer absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-black/20 backdrop-blur-sm hover:bg-white/40 text-white p-3 rounded-full transition-all"
+            aria-label="Next slide"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+
+          <div className="absolute bottom-4 left-4 flex gap-2 z-30">
+            {images.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => goToSlide(index)}
+                className={`w-2.5 h-2.5 rounded-full transition-colors duration-300 border border-white ${
+                  currentIndex === index
+                    ? "bg-white"
+                    : "bg-gray-500 hover:bg-gray-400"
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
 

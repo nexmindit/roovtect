@@ -1,4 +1,5 @@
 import About from "./_components/Home/About";
+import ArticleSection from "./_components/Home/ArticleSection";
 import ComparisonTable from "./_components/Home/ComparisonTable";
 import Faqs from "./_components/Home/FAQs";
 import FeaturesSection from "./_components/Home/FeaturesSection";
@@ -26,6 +27,7 @@ export default function Home() {
       <ServiceSteps />
       <OurProject />
       <Faqs />
+      <ArticleSection />
     </>
   );
 }
