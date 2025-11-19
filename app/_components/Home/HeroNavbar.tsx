@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useRef } from "react";
+import ConsultationButton from "../ConsultationButton";
 
 interface HeroNavbarProps {
   transparent?: boolean;
@@ -188,12 +189,7 @@ export default function HeroNavbar({ transparent = false }: HeroNavbarProps) {
             </Link>
 
             {/* CTA Button */}
-            <Link
-              href="/consultation"
-              className="bg-[#314556] text-white px-6 py-2.5 rounded-full hover:bg-[#1e2a35] font-medium transition-colors"
-            >
-              ปรึกษาฟรี
-            </Link>
+            <ConsultationButton variant="primary" />
           </div>
 
           {/* Mobile menu button */}

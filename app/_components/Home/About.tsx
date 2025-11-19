@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import ConsultationButton from "../ConsultationButton";
 
 const About = () => {
   return (
@@ -65,12 +66,7 @@ const About = () => {
           <span className="text-lg">02-096-3464</span>
         </Link>
 
-        <Link
-          href="/consultation"
-          className="bg-[#314556] text-white px-6 py-2.5 rounded-full hover:bg-[#1e2a35] font-medium transition-colors shadow-md"
-        >
-          ปรึกษาฟรี
-        </Link>
+        <ConsultationButton />
       </div>
     </div>
   );

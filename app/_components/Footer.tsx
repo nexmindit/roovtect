@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import ConsultationButton from "./ConsultationButton";
 
 export default function Footer() {
   return (
@@ -117,12 +118,7 @@ export default function Footer() {
               >
                 Get Quote
               </Link>
-              <Link
-                href="/consultation"
-                className="px-6 py-2.5 bg-white text-[#3d4f5e] rounded-full font-medium hover:bg-gray-100 transition-colors text-center"
-              >
-                ปรึกษาฟรี
-              </Link>
+              <ConsultationButton variant="white" />
             </div>
           </div>
         </div>

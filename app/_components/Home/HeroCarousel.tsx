@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import HeroNavbar from "./HeroNavbar";
+import ConsultationButton from "../ConsultationButton";
 
 interface CarouselSlide {
   id: number;
@@ -135,24 +136,47 @@ export default function HeroCarousel() {
                 {/* Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                   {slide.primaryButton && (
-                    <Link
-                      href={slide.primaryButton.link}
-                      className="bg-[#314556] flex items-center gap-2 text-white px-8 py-3 rounded-full hover:bg-[#1e2a35] font-medium transition-all transform hover:scale-105 shadow-lg"
-                    >
-                      {slide.primaryButton.text}
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        className="size-5"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </Link>
+                    <>
+                      {slide.primaryButton.text === "ปรึกษาฟรี" ? (
+                        <ConsultationButton
+                          variant="primary"
+                          className="flex items-center gap-2 transform hover:scale-105 shadow-lg"
+                        >
+                          {slide.primaryButton.text}
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            className="size-5"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                        </ConsultationButton>
+                      ) : (
+                        <Link
+                          href={slide.primaryButton.link}
+                          className="bg-[#314556] flex items-center gap-2 text-white px-8 py-3 rounded-full hover:bg-[#1e2a35] font-medium transition-all transform hover:scale-105 shadow-lg"
+                        >
+                          {slide.primaryButton.text}
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            className="size-5"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                        </Link>
+                      )}
+                    </>
                   )}
                   {slide.secondaryButton && (
                     <Link
