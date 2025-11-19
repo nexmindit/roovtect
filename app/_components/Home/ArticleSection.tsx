@@ -17,42 +17,42 @@ const articleData: Article[] = [
     imageSrc:
       "https://roovtect.com/wp-content/uploads/2025/09/attractive-asian-woman-cooking-kitchen-768x512.jpg",
     title: "เปิดตำราฮวงจุ้ย ห้องครัวควรอยู่ที่ไหนของบ้าน?",
-    href: "/article/fengshui-kitchen",
+    href: "/blog/fengshui-kitchen",
   },
   {
     date: "19 ก.ย.",
     imageSrc:
       "https://roovtect.com/wp-content/uploads/2025/09/gray-cat-lounging-stretching-on-window-768x512.jpg",
     title: "5 เคล็ดลับการออกแบบห้องสัตว์เลี้ยงในบ้าน สร้างความสุขร่วมกัน",
-    href: "/article/pet-room-design",
+    href: "/blog/pet-room-design",
   },
   {
     date: "18 ก.ย.",
     imageSrc:
       "https://roovtect.com/wp-content/uploads/2025/09/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%AA%E0%B8%B2%E0%B8%94%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%96%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B8%87%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B9%87%E0%B8%81-768x512.jpg",
     title: "3 วิธีแบ่งรูปแบบกันสาดบ้าน สร้างบ้านสวย ใช้งานคุ้ม",
-    href: "/article/canopy-types",
+    href: "/blog/canopy-types",
   },
   {
     date: "18 ก.ย.",
     imageSrc:
       "https://roovtect.com/wp-content/uploads/2025/09/modern-interior-kitchen-luxury-private-house-768x512.jpg",
     title: "เคล็ดลับการออกแบบห้องครัวให้ใช้ได้นาน ไม่ต้องซ่อมบ่อย",
-    href: "/article/durable-kitchen-tips",
+    href: "/blog/durable-kitchen-tips",
   },
   {
     date: "17 ก.ย.",
     imageSrc:
       "https://roovtect.com/wp-content/uploads/2025/09/gray-cat-lounging-stretching-on-window-768x512.jpg",
     title: "เทคนิคการเลือกใช้วัสดุหลังคาที่เหมาะสมกับภูมิอากาศ",
-    href: "/article/new-article-5",
+    href: "/blog/new-article-5",
   },
   {
     date: "17 ก.ย.",
     imageSrc:
       "https://roovtect.com/wp-content/uploads/2025/09/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%AA%E0%B8%B2%E0%B8%94%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%96%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B8%87%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B9%87%E0%B8%81-768x512.jpg",
     title: "การคำนวณงบประมาณทำโรงรถ: สิ่งที่ต้องรู้ก่อนเริ่มงาน",
-    href: "/article/new-article-6",
+    href: "/blog/new-article-6",
   },
 ];
 
@@ -153,7 +153,7 @@ export default function ArticleSection() {
 
         <div className="text-center">
           <Link
-            href="/articles"
+            href="/blogs"
             className="inline-flex items-center text-white bg-[#314556] px-8 py-3 rounded-full font-medium transition-colors hover:bg-[#1e2a35]"
           >
             บทความทั้งหมด &rsaquo;
