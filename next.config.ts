@@ -11,6 +11,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "roovtect.com",
       },
+      {
+        protocol: "https",
+        hostname: "smartquote.roovtect.com",
+      },
     ],
   },
 };
