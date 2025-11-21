@@ -123,7 +123,7 @@ export default function ProductPageTemplate({
               <>
                 <button
                   onClick={prevSlide}
-                  className="cursor-pointer absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm hover:bg-white/40 text-white p-2 rounded-full transition-all opacity-0 group-hover:opacity-100"
+                  className="cursor-pointer absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-black/20 backdrop-blur-sm hover:bg-white/40 text-white p-2 rounded-full transition-all opacity-0 group-hover:opacity-100"
                 >
                   <svg
                     className="w-6 h-6"
@@ -141,7 +141,7 @@ export default function ProductPageTemplate({
                 </button>
                 <button
                   onClick={nextSlide}
-                  className="cursor-pointer absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm hover:bg-white/40 text-white p-2 rounded-full transition-all opacity-0 group-hover:opacity-100"
+                  className="cursor-pointer absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-black/20 backdrop-blur-sm hover:bg-white/40 text-white p-2 rounded-full transition-all opacity-0 group-hover:opacity-100"
                 >
                   <svg
                     className="w-6 h-6"

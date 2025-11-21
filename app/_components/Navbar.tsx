@@ -121,10 +121,10 @@ export default function Navbar() {
                     ALU PORT ORIGIN
                   </Link>
                   <Link
-                    href="/products/aluport-next"
+                    href="/products/alu-port-next"
                     className="block px-4 py-2 text-white hover:bg-[#3d5668] transition-colors pl-8"
                   >
-                    ALUPORT NEXT
+                    ALU PORT NEXT
                   </Link>
                   <Link
                     href="/products/ykk-ap"

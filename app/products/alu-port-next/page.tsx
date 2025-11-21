@@ -1,0 +1,103 @@
+import React from "react";
+import ProductPageTemplate, {
+  ProductPageProps,
+} from "../../_components/templates/ProductPageTemplate";
+import Navbar from "@/app/_components/Navbar";
+
+const pageData: ProductPageProps = {
+  // --- Hero Section ---
+  heroImages: [
+    "/ALU PORT NEXT/carousel.webp",
+    "/ALU PORT NEXT/carousel2.webp",
+    "/ALU PORT NEXT/carousel3.webp",
+    "/ALU PORT NEXT/carousel4.jpg",
+    "/ALU PORT NEXT/carousel5.webp",
+  ],
+  productName: "Alu Port Next",
+  heroDescription:
+    "สัมผัสความสะดวกสบายอีกระดับด้วยหลังคาโรงจอดรถโครงสร้างอลูมิเนียม Alu Port Next ได้รับการออกแบบมาเพื่อเพิ่มความสะดวกสบายในการเข้าและออกจากรถ จอดรถง่าย คล่องตัว โดยไม่ต้องกังวลเรื่องการเฉี่ยวชนเสา แต่ยังคงความสวยงามด้วยโครงสร้างอลูมิเนียม นอกจากนี้ยังสามารถติดตั้งในแนวนอนเพื่อเพิ่มพื้นที่จอดรถให้มากขึ้น หรือติดตั้งเป็นที่จอดรถสาธารณะ ช่วยตอบโจทย์ทุกความต้องการ",
+  featuresList: [
+    "ผลิตและนำเข้าจากญี่ปุ่น 100%",
+    "ผลิตจาก Aluminum Anodized ไร้สนิม",
+    "ติดตั้งรวดเร็วด้วยระบบ Knockdown",
+    "ลดการส่งผ่านความร้อนพร้อมป้องกันรังสี UV 99%",
+    "สามารถเลือกสีวัสดุและการจัดวางได้อย่างหลากหลาย",
+    "การรับประกันโครงสร้างนาน 10 ปี",
+  ],
+
+  // --- Info Section ---
+  infoTitle: "Alu Port Next",
+  infoDescription:
+    "สัมผัสความสะดวกสบายอีกระดับด้วยหลังคาโรงจอดรถโครงสร้างอลูมิเนียม Alu Port Next ได้รับการออกแบบมาเพื่อเพิ่มความสะดวกสบายในการเข้าและออกจากรถจอดรถง่าย คล่องตัว โดยไม่ต้องกังวลเรื่องการเฉี่ยวชนเสา แต่ยังคงความสวยงามด้วยโครงสร้างอลูมิเนียม",
+  imageOneCar: "/ALU PORT NEXT/cartype1.jpg",
+  imageTwoCar: "/ALU PORT NEXT/cartype2.jpg",
+
+  // --- Features Grid (Dark Section) ---
+  featuresTitle: "ROOVTECT Aluminum Car Port",
+  featuresSubtitle:
+    "หลังคาโรงรถโครงสร้างอลูมิเนียม ผลิตและนำเข้าจากประเทศญี่ปุ่น ติดตั้งโดยทีมงานมืออาชีพ พร้อมบริการหลังการขาย รับประกันโครงสร้างนาน 10 ปี",
+  featureIcons: [
+    {
+      icon: "/ALU PORT 7/info1.webp",
+      title: "DESIGN & MADE IN JAPAN",
+      description: "ผลิตและนำเข้าจากประเทศญี่ปุ่น 100%",
+    },
+    {
+      icon: "/ALU PORT 7/info2.webp",
+      title: "KNOCKDOWN SYSTEM",
+      description: "ติดตั้งรวดเร็วด้วยระบบ Knockdown",
+    },
+    {
+      icon: "/ALU PORT 7/info3.webp",
+      title: "SOLID POLYCARBONATE ROOFING",
+      description: "แผ่นหลังคา Solid Polycarbonate กรองความร้อนและกัน UV 99%",
+    },
+    {
+      icon: "/ALU PORT 7/info4.webp",
+      title: "BUILT-IN RAIN GUTTER",
+      description: "ระบบรางน้ำแบบ Built-in ในตัว",
+    },
+  ],
+
+  // --- Gallery ---
+  galleryImages: [
+    "/ALU PORT NEXT/carousel.webp",
+    "/ALU PORT NEXT/carousel2.webp",
+    "/ALU PORT NEXT/carousel3.webp",
+    "/ALU PORT NEXT/carousel4.jpg",
+    "/ALU PORT NEXT/carousel5.webp",
+  ],
+
+  // --- Related Products (More) ---
+  relatedProducts: [
+    {
+      name: "YKKAP (First Rouge)",
+      image: "/ALU PORT 7/carousel1.webp", // Placeholder
+      link: "#",
+    },
+    {
+      name: "Alu Port 7",
+      image: "/ALU PORT 7/carousel2.webp",
+      link: "/products/aluminum-car-port/alu-port-7",
+    },
+    {
+      name: "Alu Port Origin",
+      image: "/ALU PORT 7/carousel3.webp", // Placeholder
+      link: "/products/aluminum-car-port/alu-port-origin",
+    },
+    {
+      name: "Alu Port V",
+      image: "/ALU PORT 7/carousel4.webp",
+      link: "/products/aluminum-car-port/alu-port-v",
+    },
+  ],
+};
+
+export default function AluPortNextPage() {
+  return (
+    <>
+      <Navbar />
+      <ProductPageTemplate {...pageData} />
+    </>
+  );
+}
