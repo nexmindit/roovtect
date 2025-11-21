@@ -7,8 +7,8 @@ const SmartQuote = () => {
   return (
     <>
       <Navbar />
-      <SmartQuoteHero />
-      <ProcessSteps />
+      {/* <SmartQuoteHero />
+      <ProcessSteps /> */}
     </>
   );
 };
