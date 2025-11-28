@@ -3,6 +3,7 @@ import ArticleSection from "./_components/Home/ArticleSection";
 import ComparisonTable from "./_components/Home/ComparisonTable";
 import Faqs from "./_components/Home/FAQs";
 import FeaturesSection from "./_components/Home/FeaturesSection";
+import GallerySection from "./_components/Home/GallerySection";
 import HeroCarousel from "./_components/Home/HeroCarousel";
 import OurProject from "./_components/Home/OurProject";
 import Projects from "./_components/Home/Projects";
@@ -17,17 +18,8 @@ export default function Home() {
     <>
       <HeroCarousel />
       <About />
-      <StatsCounter />
       <FeaturesSection />
-      <VideoSection />
-      <SolutionSection />
-      <Projects />
-      <ComparisonTable />
-      <StructureDesign />
-      <ServiceSteps />
-      <OurProject />
-      <Faqs />
-      <ArticleSection />
+      <GallerySection />
     </>
   );
 }

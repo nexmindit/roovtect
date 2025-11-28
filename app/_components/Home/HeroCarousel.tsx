@@ -25,35 +25,7 @@ interface CarouselSlide {
 const slides: CarouselSlide[] = [
   {
     id: 1,
-    image: "/banner_carousel1.jpg",
-    title: "UNIQUE ROOF SOLUTION",
-    description: "หลังคาโรงรถ | พื้นระแนงไม้เทียม ติดตั้งระบบ KNOCKDOWN",
-    primaryButton: {
-      text: "ปรึกษาฟรี",
-      link: "/products",
-    },
-  },
-  {
-    id: 2,
-    image: "/banner_carousel2.jpg",
-
-    secondaryButton: {
-      text: "Google Maps",
-      link: "/gallery",
-    },
-  },
-  {
-    id: 3,
-    image: "/banner_carousel3.webp",
-
-    primaryButton: {
-      text: "Call",
-      link: "/gallery",
-    },
-    secondaryButton: {
-      text: "Line",
-      link: "/consultation",
-    },
+    image: "/home1.png",
   },
 ];
 

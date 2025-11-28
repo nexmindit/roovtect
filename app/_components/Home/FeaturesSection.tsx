@@ -4,40 +4,37 @@ import Image from "next/image";
 const featuresData = [
   {
     id: 1,
-    imageSrc: "/feature1.webp",
-    title: "Unique Design",
-    subtitle: "ดีไซน์สวยงามเป็นเอกลักษณ์",
+    imageSrc: "/feature4.webp",
+    title: "Shinkolite Roofing & Canopy",
+    subtitle: "หลังคาและกันสาด",
     points: [
-      "ออกแบบให้สอดคล้องกับไลฟ์สไตล์ และความต้องการของลูกค้า",
-      "ติดตั้งอย่างลงตัว เสริมความสวยงามของบ้านและอาคาร",
-      "รักษาสุนทรียภาพและบรรยากาศโดยรวมของพื้นที่อย่างครบถ้วน",
-      "สะท้อนเอกลักษณ์การอยู่อาศัย ด้วยดีไซน์ที่เป็นหนึ่งเดียวตามที่ลูกค้าต้องการ",
+      "เปลี่ยนพื้นที่รอบบ้านให้ดูดีมีระดับ ด้วยหลังคาโปร่งแสง Shinkolite",
+      "กันความร้อนได้ดีเยี่ยม สวยงามเหมือนกระจกแต่เหนียวแน่นกว่า",
+      "โครงสร้างดีไซน์ทันสมัย เหมาะสำหรับโรงจอดรถ ลานซักล้าง หรือเฉลียงหน้าบ้าน",
     ],
     bgColorClass: "bg-[#DBD6D1]",
     textColorClass: "text-[#314556]",
   },
   {
     id: 2,
-    imageSrc: "/feature2.webp",
-    title: "Quality That Lasts",
-    subtitle: "การันตีความทนทานและปลอดภัย",
+    imageSrc: "/feature1.png",
+    title: "Custom Metal & Stainless Works ",
+    subtitle: "งานสั่งทำ เหล็กและสแตนเลส",
     points: [
-      "ใช้วัสดุเหล็กคุณภาพสูง มาตรฐาน JIS (Japanese Industrial Standard)",
-      "ปั๊มตัดขึ้นรูปแบบพิเศษโดยเครื่องจักรจากโรงงานเหล็กกล้า พร้อมกำหนดขนาดและความหนาตามมาตรฐาน",
-      "เคลือบกันสนิมด้วยกระบวนการทำสี 3 ขั้นตอน โดยใช้เทคนิคการทำสีแบบพ่นทรายมาตรฐานอุตสาหกรรม ทำให้ได้พื้นผิวสัมผัสแบบ Premium",
+      "โครงป้าย: ทำโครงป้ายร้าน ป้ายทาวเวอร์ แข็งแรง ทนทาน",
+      "งานประกอบ: งานดัด งานเชื่อมสแตนเลส งานโครงสร้างสถาปัตยกรรม",
     ],
     bgColorClass: "bg-[#314556]",
     textColorClass: "text-white",
   },
   {
     id: 3,
-    imageSrc: "/feature3.webp",
-    title: "Knockdown System",
-    subtitle: "ประหยัดเวลา ลดปัญหาการทรุดตัว",
+    imageSrc: "/feature2.jpg",
+    title: "Furniture & Knockdown Units",
+    subtitle: "เฟอร์นิเจอร์และงานน็อคดาวน์",
     points: [
-      "ใช้วิธีการ Tailor Made Design เพื่อเสริมฟังก์ชันการใช้งานของเหล็กกล้าให้เหมาะสมกับความต้องการเฉพาะของลูกค้า",
-      "ติดตั้งแบบ Joint System ระบบรอยต่อที่เพิ่มประสิทธิภาพการยึดติดสูง ลดการเชื่อมด้วยความร้อนหน้างานลดปัญหาการทรุดตัวของโครงสร้าง ซึ่งทำให้โครงสร้างมีความแข็งแรงและทนทาน",
-      "ประหยัดเวลาในการประกอบติดตั้ง โดยยังรักษาคุณภาพและความคงทนสูงเหมือนเดิม",
+      "Furniture: รับทำม้านั่ง โต๊ะ เก้าอี้ สไตล์ Loft/Industrial",
+      "Knockdown: งานประกอบสำเร็จรูปจากโรงงาน ยกไปวางหรือประกอบหน้างานได้ทันที ลดฝุ่นและเสียงรบกวนหน้างาน",
     ],
     bgColorClass: "bg-[#DBD6D1]",
     textColorClass: "text-[#314556]",
@@ -49,7 +46,7 @@ export default function FeaturesSection() {
     <section>
       <div className="bg-[#314556] py-12 md:py-16 px-4">
         <h2 className="text-3xl md:text-4xl font-semibold text-white text-center">
-          จุดเด่นของบริการต่อเติมหลังคาหน้าบ้านจาก ROOVTECT
+          บริการของเรา
         </h2>
       </div>
 
@@ -59,13 +56,13 @@ export default function FeaturesSection() {
             key={feature.id}
             className={`${feature.bgColorClass} ${feature.textColorClass} p-8 lg:p-12`}
           >
-            <div className="mb-6 w-full">
+            <div className="mb-6 w-full aspect-[4/5] overflow-hidden">
               <Image
                 src={feature.imageSrc}
                 alt={feature.title}
                 width={500}
-                height={350}
-                className="w-full h-auto object-cover"
+                height={375}
+                className="w-full h-full object-cover"
               />
             </div>
 
@@ -83,6 +80,17 @@ export default function FeaturesSection() {
             </ul>
           </div>
         ))}
+      </div>
+
+      {/* Material Comparison Image - Full Width */}
+      <div className="w-screen relative left-[50%] right-[50%] -mx-[50vw]">
+        <Image
+          src="/Compare_Material.png"
+          alt="Material Comparison"
+          width={1920}
+          height={1080}
+          className="w-full h-auto object-cover"
+        />
       </div>
     </section>
   );
