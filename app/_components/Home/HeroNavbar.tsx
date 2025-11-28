@@ -161,13 +161,6 @@ export default function HeroNavbar({ transparent = false }: HeroNavbarProps) {
             </Link>
 
             <Link
-              href="/smartquote"
-              className="text-white hover:text-gray-200 font-medium transition-colors"
-            >
-              SmartQuote
-            </Link>
-
-            <Link
               href="/blog"
               className="text-white hover:text-gray-200 font-medium transition-colors"
             >

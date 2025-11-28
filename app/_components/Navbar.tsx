@@ -149,12 +149,6 @@ export default function Navbar() {
               Gallery
             </Link>
 
-            <Link
-              href="/smartquote"
-              className="text-[#314556] hover:text-[#1e2a35] font-medium transition-colors"
-            >
-              SmartQuote
-            </Link>
 
             <Link
               href="/blog"
