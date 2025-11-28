@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Roovtect - Premium Roofing Solutions",
+  title: "POWERKING - Premium Roofing Solutions",
   description:
-    "ROOVTECT by SASICHAVIKITCO.,LTD. - Professional roofing and carport solutions",
+    "POWERKING by SASICHAVIKITCO.,LTD. - Professional roofing and carport solutions",
 };
 
 export default function RootLayout({

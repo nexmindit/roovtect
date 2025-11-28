@@ -35,11 +35,11 @@ export default function Navbar() {
           <div className="shrink-0">
             <Link href="/">
               <Image
-                src="/roovtect_logo.png"
-                alt="Roovtect Logo"
+                src="/images/logo_navbar.png"
+                alt="POWER KING Logo"
                 width={75}
                 height={30}
-                className="h-10 w-auto"
+                className="h-20 w-auto"
               />
             </Link>
           </div>
@@ -53,14 +53,14 @@ export default function Navbar() {
               Home
             </Link>
 
-            {/* Products & Services Dropdown */}
+            {/* Services Dropdown */}
             <div
               className="relative group"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
               <button className="text-[#314556] hover:text-[#1e2a35] font-medium transition-colors flex items-center">
-                Products & Services
+                Services
                 <svg
                   className={`ml-1 w-4 h-4 transition-transform ${
                     isProductsOpen ? "rotate-180" : ""
@@ -86,57 +86,22 @@ export default function Navbar() {
                   onMouseLeave={handleMouseLeave}
                 >
                   <Link
-                    href="/products/shinkolite"
+                    href="/services/shinkolite"
                     className="block px-4 py-2 text-white hover:bg-[#3d5668] transition-colors"
                   >
-                    SHINKOLITE
+                    Shinkolite Roofing & Canopy
                   </Link>
                   <Link
-                    href="/products/awning"
+                    href="/services/custom-metal"
                     className="block px-4 py-2 text-white hover:bg-[#3d5668] transition-colors"
                   >
-                    AWNING
-                  </Link>
-
-                  {/* Sub-category */}
-                  <div className="px-4 py-2 text-white font-semibold text-sm border-t border-[#3d5668] mt-2">
-                    ALUMINIUM CAR PORT
-                  </div>
-                  <Link
-                    href="/products/alu-port-7"
-                    className="block px-4 py-2 text-white hover:bg-[#3d5668] transition-colors pl-8"
-                  >
-                    ALU PORT 7
+                    Custom Metal & Stainless Works
                   </Link>
                   <Link
-                    href="/products/alu-port-v"
-                    className="block px-4 py-2 text-white hover:bg-[#3d5668] transition-colors pl-8"
+                    href="/services/furniture"
+                    className="block px-4 py-2 text-white hover:bg-[#3d5668] transition-colors"
                   >
-                    ALU PORT V
-                  </Link>
-                  <Link
-                    href="/products/alu-port-origin"
-                    className="block px-4 py-2 text-white hover:bg-[#3d5668] transition-colors pl-8"
-                  >
-                    ALU PORT ORIGIN
-                  </Link>
-                  <Link
-                    href="/products/alu-port-next"
-                    className="block px-4 py-2 text-white hover:bg-[#3d5668] transition-colors pl-8"
-                  >
-                    ALU PORT NEXT
-                  </Link>
-                  <Link
-                    href="/products/ykk-ap"
-                    className="block px-4 py-2 text-white hover:bg-[#3d5668] transition-colors pl-8"
-                  >
-                    YKK AP
-                  </Link>
-                  <Link
-                    href="/products/alu-canopy"
-                    className="block px-4 py-2 text-white hover:bg-[#3d5668] transition-colors pl-8"
-                  >
-                    ALU CANOPY
+                    Furniture & Knockdown Units
                   </Link>
                 </div>
               )}
@@ -149,12 +114,11 @@ export default function Navbar() {
               Gallery
             </Link>
 
-
             <Link
-              href="/blog"
+              href="/portfolio"
               className="text-[#314556] hover:text-[#1e2a35] font-medium transition-colors"
             >
-              Blog
+              Portfolio
             </Link>
 
             <Link
@@ -166,7 +130,7 @@ export default function Navbar() {
 
             <Link
               href="/contact"
-              className="text-[#314556] hover:text-[#1e2a35] font-medium transition-colors"
+              className="bg-[#314556] text-white px-4 py-1.5 rounded-full font-medium transition-colors hover:bg-[#1e2a35]"
             >
               Contact
             </Link>

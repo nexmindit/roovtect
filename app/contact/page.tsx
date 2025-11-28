@@ -1,188 +1,163 @@
-import React from "react";
-import Navbar from "../_components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
+import Navbar from "../_components/Navbar";
 
-const Contact = () => {
-  const LocationSvg = () => (
-    <svg
-      className="w-5 h-5"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"
-      />
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-      />
-    </svg>
-  );
+const contactChannels = [
+  {
+    title: "LINE Official",
+    description: "แอดไลน์ส่งรูปหน้างาน หรือสอบถามเบื้องต้น",
+    button: "แอดไลน์ @PowerKing",
+    link: "https://line.me/ti/p/~@roovtect",
+    icon: (
+      <svg className="h-8 w-8 text-[#06C755]" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" />
+      </svg>
+    ),
+    variant: "primary",
+  },
+  {
+    title: "Call Center",
+    description: "ติดต่อสอบถามด่วน ช่วงเวลา 08.00 - 18.00 น.",
+    button: "โทร 02-096-3464",
+    link: "tel:020963464",
+    icon: (
+      <svg className="h-8 w-8 text-[#1f2c38]" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+          stroke="currentColor"
+          strokeWidth={1.6}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    ),
+    variant: "outline",
+  },
+  {
+    title: "Project Submission",
+    description: "สำหรับส่งไฟล์ CAD, PDF หรือแบบดีไซน์เพื่อประเมินราคา",
+    button: "Email: contact@powerking.com",
+    link: "mailto:contact@powerking.com",
+    icon: (
+      <svg className="h-8 w-8 text-[#1f2c38]" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M3 8l8.16 5.44a2 2 0 002.28 0L21 8m-16 11h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+          stroke="currentColor"
+          strokeWidth={1.6}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    ),
+    variant: "ghost",
+  },
+];
 
-  const PhoneSvg = () => (
-    <svg
-      className="w-5 h-5"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-      />
-    </svg>
-  );
+const trustBadges = [
+  "✅ Registered Company: จดทะเบียนนิติบุคคลถูกต้อง ออกใบกำกับภาษีได้",
+  "✅ Real Workshop: มีโรงงานประกอบชิ้นงานจริง เข้าเยี่ยมชมได้ (นัดหมายล่วงหน้า)",
+  "✅ Professional Team: ทีมช่างประจำ ไม่ทิ้งงาน",
+];
 
-  const EmailSvg = () => (
-    <svg
-      className="w-5 h-5"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-      />
-    </svg>
-  );
+const inquiryTopics = [
+  { label: "งานหลังคา", value: "roofing" },
+  { label: "งานโครงสร้าง", value: "structure" },
+  { label: "เฟอร์นิเจอร์", value: "furniture" },
+];
 
-  const FacebookSvg = () => (
-    <svg
-      className="w-5 h-5"
-      fill="currentColor"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v2.385z" />
-    </svg>
-  );
-
-  const LineSvg = () => (
-    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" />
-    </svg>
-  );
-
-  const IconWrapper = ({ children }: { children: React.ReactNode }) => (
-    <div className="flex-shrink-0 w-9 h-9 bg-[#314556] rounded-full flex items-center justify-center text-white">
-      {children}
-    </div>
-  );
-
-  const contactInfo = [
-    {
-      icon: (
-        <IconWrapper>
-          <LocationSvg />
-        </IconWrapper>
-      ),
-      text: "488/22 หมู่ 1 ถนนปู่เจ้าสมิงพราย ต.สำโรงใต้ อ.เมืองสมุทรปราการ จ.สมุทรปราการ 10130",
-      href: "https://maps.google.com/?q=488/22 หมู่ 1 ถนนปู่เจ้าสมิงพราย ต.สำโรงใต้ อ.เมืองสมุทรปราการ จ.สมุทรปราการ 10130",
-    },
-    {
-      icon: (
-        <IconWrapper>
-          <PhoneSvg />
-        </IconWrapper>
-      ),
-      text: "02-096-3464",
-      href: "tel:020963464",
-    },
-    {
-      icon: (
-        <IconWrapper>
-          <EmailSvg />
-        </IconWrapper>
-      ),
-      text: "contact@roovtect.com",
-      href: "mailto:contact@roovtect.com",
-    },
-    {
-      icon: (
-        <IconWrapper>
-          <FacebookSvg />
-        </IconWrapper>
-      ),
-      text: "roovtect",
-      href: "https://facebook.com/roovtect",
-    },
-    {
-      icon: (
-        <IconWrapper>
-          <LineSvg />
-        </IconWrapper>
-      ),
-      text: "@roovtect",
-      href: "https://line.me/ti/p/~@roovtect",
-    },
-  ];
+export default function ContactPage() {
   return (
     <>
       <Navbar />
-      <footer className="w-full bg-[#F3F4F6] py-16 md:py-24 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h3 className="text-2xl font-semibold text-[#314556] mb-16 text-center">
-            ช่องทางการติดต่อ ROOVTECT สำหรับบริการต่อเติมโรงรถ กันสาด และ Facade
-          </h3>
+      <main className="bg-[#f7f7f8] text-[#1f1f25]">
+        <section className="relative py-24 px-4 sm:px-6 bg-white overflow-hidden">
+          <Image
+            src="/About-02.jpg"
+            alt="Power King Team"
+            fill
+            className="object-cover opacity-30"
+          />
+          <div className="relative max-w-4xl mx-auto text-center space-y-4">
+            <p className="text-xs uppercase tracking-[0.3em] text-[#b0b7be]">
+              Contact Power King
+            </p>
+            <h1 className="text-4xl md:text-5xl font-semibold">Let’s Build Your Vision</h1>
+            <p className="text-lg md:text-xl text-[#4b5a66]">
+              ปรึกษาเรื่องงานโครงสร้าง หรือส่งแบบประเมินราคา... เราพร้อมดูแลคุณ
+            </p>
+          </div>
+        </section>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 items-center">
-            <div className="flex justify-center items-center">
-              <Image
-                src="/logo-full.png"
-                alt="Roovtect Inventive Prefab Logo"
-                width={450}
-                height={96}
-                className="object-contain"
-              />
-            </div>
-
-            <div className="w-full">
-              <div className="space-y-7">
-                {contactInfo.map((item) => (
-                  <a
-                    key={item.text}
-                    href={item.href || "#"}
-                    target={item.href ? "_blank" : undefined}
-                    rel={item.href ? "noopener noreferrer" : undefined}
-                    className="flex items-center gap-4 group cursor-pointer"
-                  >
-                    {item.icon}
-                    <span className="text-lg md:text-xl text-gray-700 group-hover:text-black transition-colors duration-300">
-                      {item.text}
-                    </span>
-                  </a>
-                ))}
-              </div>
-
-              <div className="mt-10">
+        <section className="py-16 px-4 sm:px-6 bg-white">
+          <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-3">
+            {contactChannels.map((channel) => (
+              <div key={channel.title} className="border border-[#e2e6ea] rounded-3xl p-6 space-y-4">
+                <div className="flex items-center gap-3">
+                  {channel.icon}
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.2em] text-[#8f99a2]">
+                      {channel.title}
+                    </p>
+                    <p className="text-sm text-[#4b5a66]">{channel.description}</p>
+                  </div>
+                </div>
                 <Link
-                  href="/consultation"
-                  className="inline-flex items-center text-white bg-[#314556] px-8 py-3 rounded-full font-medium transition-colors hover:bg-[#1e2a35]"
+                  href={channel.link}
+                  className={`block text-center rounded-full px-4 py-2 text-sm font-semibold ${
+                    channel.variant === "primary"
+                      ? "bg-[#06C755] text-white"
+                      : channel.variant === "outline"
+                      ? "border border-[#1f2c38] text-[#1f2c38]"
+                      : "border border-[#d5d9dc] text-[#4b5a66]"
+                  }`}
                 >
-                  ปรึกษาฟรี ›
+                  {channel.button}
                 </Link>
               </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="py-16 px-4 sm:px-6">
+          <div className="max-w-6xl mx-auto grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+            <div className="space-y-6 bg-white rounded-[32px] p-8 shadow-sm border border-[#e4e7eb]">
+              <p className="text-xs uppercase tracking-[0.3em] text-[#8f99a2]">
+                Power King Office & Workshop
+              </p>
+              <h2 className="text-3xl font-semibold">
+                เลขที่ xxx/xx ถนน... แขวง... เขต... กทม. xxxxx
+              </h2>
+              <div className="space-y-3 text-sm text-[#4b5a66]">
+                {trustBadges.map((badge) => (
+                  <p key={badge}>{badge}</p>
+                ))}
+              </div>
+              <p className="text-sm text-[#4b5a66]">มีที่จอดรถสำหรับลูกค้าที่เข้ามาติดต่อ</p>
+              <Image
+                src="/About-03.jpg"
+                alt="Power King Workshop"
+                width={640}
+                height={360}
+                className="rounded-2xl object-cover"
+              />
+            </div>
+            <div className="space-y-4">
+              <iframe
+                title="Power King Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.2239!2d100.467!3d13.6587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d603531111111%3APowerKing!5e0!3m2!1sth!2sth!4v0000000000"
+                width="100%"
+                height="380"
+                allowFullScreen
+                loading="lazy"
+                className="rounded-[32px] border-0 shadow"
+              />
+              <p className="text-sm text-[#4b5a66] text-center">
+                มีที่จอดรถสำหรับลูกค้าที่เข้ามาติดต่อ
+              </p>
             </div>
           </div>
-        </div>
-      </footer>
+        </section>
+      </main>
     </>
   );
-};
-
-export default Contact;
+}

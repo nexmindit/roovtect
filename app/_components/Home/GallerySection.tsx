@@ -2,51 +2,78 @@ import React from "react";
 import Image from "next/image";
 
 const galleryImages = [
-  { id: 1, src: "/gallery1.png", alt: "Installation Photo 1" },
-  { id: 2, src: "/gallery2.jpg", alt: "Installation Photo 2" },
-  { id: 3, src: "/gallery3.jpg", alt: "Installation Photo 3" },
-  { id: 4, src: "/gallery1.png", alt: "Installation Photo 4" },
-  { id: 5, src: "/gallery2.jpg", alt: "Installation Photo 5" },
-  { id: 6, src: "/gallery3.jpg", alt: "Installation Photo 6" },
-  { id: 7, src: "/gallery1.png", alt: "Installation Photo 7" },
-  { id: 8, src: "/gallery2.jpg", alt: "Installation Photo 8" },
-  { id: 9, src: "/gallery3.jpg", alt: "Installation Photo 9" },
+  {
+    id: 1,
+    src: "/gallery1.png",
+    alt: "Shinkolite Carport",
+    title: "Shinkolite Carport",
+    description: "ภาพงานโรงจอดรถ Shinkolite",
+  },
+  {
+    id: 2,
+    src: "/feature1.png",
+    alt: "Custom Sign Structure",
+    title: "Custom Sign Structure",
+    description: "ภาพงานโครงป้ายหน้าร้าน",
+  },
+  {
+    id: 3,
+    src: "/feature2.jpg",
+    alt: "Loft Furniture Set",
+    title: "Loft Furniture Set",
+    description: "ภาพชุดโต๊ะเก้าอี้เหล็ก",
+  },
+  {
+    id: 4,
+    src: "/process2.png",
+    alt: "Knockdown Delivery",
+    title: "Knockdown Delivery",
+    description: "ภาพการขนย้ายงานน็อคดาวน์ไปติดตั้ง",
+  },
 ];
 
 export default function GallerySection() {
   return (
-    <section className="py-12 md:py-16 px-4 bg-white">
-      <div className="max-w-7xl mx-auto">
-        {/* Section Title */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-[#314556] text-center mb-8 md:mb-12">
-          ภาพงานติดตั้งจริง
-        </h2>
+    <section className="bg-[#f4f7fa] py-20 md:py-24 px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto">
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.3em] text-[#7e8ea2]">
+              PROJECT SNAPSHOTS
+            </p>
+            <h2 className="mt-4 text-3xl md:text-4xl font-semibold text-[#1f2c38]">
+              ภาพงานติดตั้งจริงที่จบคมกริบทุกดีเทล
+            </h2>
+          </div>
+          <p className="text-base md:text-lg text-[#4b5a66] max-w-xl">
+            รวมผลงานจริงตั้งแต่โรงจอดรถ Shinkolite โครงป้ายหน้าร้าน
+            งานเฟอร์นิเจอร์เหล็ก และโซลูชันน็อคดาวน์ที่ขนย้ายไปติดตั้งได้ทันที
+          </p>
+        </div>
 
-        {/* 3x3 Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+        <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           {galleryImages.map((image) => (
-            <div key={image.id} className="w-full aspect-[4/3] overflow-hidden">
-              <Image
-                src={image.src}
-                alt={image.alt}
-                width={800}
-                height={600}
-                className="w-full h-full object-cover"
-              />
+            <div
+              key={image.id}
+              className="group overflow-hidden rounded-[28px] bg-white shadow-sm ring-1 ring-[#e1e7ee]"
+            >
+              <div className="relative w-full pt-[70%]">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="px-5 py-4">
+                <p className="text-lg font-semibold text-[#1f2c38]">
+                  {image.title}
+                </p>
+                <p className="text-sm text-[#6b7b8c]">{image.description}</p>
+              </div>
             </div>
           ))}
         </div>
-      </div>
-
-      {/* FAQ Image - Full Width */}
-      <div className="w-screen relative left-[50%] right-[50%] -mx-[50vw] mt-12 md:mt-16">
-        <Image
-          src="/faq.png"
-          alt="FAQ"
-          width={1920}
-          height={1080}
-          className="w-full h-auto object-cover"
-        />
       </div>
     </section>
   );
