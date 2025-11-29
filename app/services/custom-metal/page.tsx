@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "@/app/_components/Navbar";
 import ConsultationButton from "@/app/_components/ConsultationButton";
 import ServiceGallery, { Project } from "@/app/_components/ServiceGallery";
+import { Link } from "lucide-react";
 
 const projects: Project[] = [
   {
@@ -76,10 +77,10 @@ export default function CustomMetalServicePage() {
                 Custom Metal & Stainless Works
               </p>
               <div>
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
+                <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight">
                   Crafting Your Vision
                 </h1>
-                <p className="mt-3 text-xl text-[#555b63]">
+                <p className="mt-3 text-lg text-[#555b63]">
                   รับงานตามแบบดีไซน์... เปลี่ยนจินตนาการให้เป็นโครงสร้างจริง
                 </p>
               </div>
@@ -104,13 +105,14 @@ export default function CustomMetalServicePage() {
             </div>
 
             <ConsultationButton className="w-full sm:w-auto px-8 py-3">
-              ปรึกษาและประเมินราคาฟรี
+              ปรึกษาประเมินราคาฟรี!!
             </ConsultationButton>
+
           </div>
 
           <div className="relative h-[400px] lg:h-full w-full overflow-hidden">
             <Image
-              src="/feature1.png"
+              src="/images/services/custom-metal/1.1.png"
               alt="Steel signage tower"
               fill
               className="object-cover"
@@ -127,7 +129,7 @@ export default function CustomMetalServicePage() {
           <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] items-center">
             <div className="relative h-80 md:h-[420px] w-full overflow-hidden rounded-[32px] shadow-lg order-1 lg:order-none">
               <Image
-                src="/feature4.webp"
+                src="/images/services/custom-metal/2.png"
                 alt="Aluminum glass house"
                 fill
                 className="object-cover"
@@ -140,10 +142,10 @@ export default function CustomMetalServicePage() {
                 Flawless Modernity
               </p>
               <div>
-                <h2 className="text-3xl md:text-4xl font-semibold">
+                <h2 className="text-2xl md:text-3xl font-semibold">
                   Architectural Aluminum
                 </h2>
-                <p className="mt-2 text-xl text-[#555b63]">
+                <p className="mt-2 text-lg text-[#555b63]">
                   งานอลูมิเนียมเกรดสถาปัตยกรรม... เพื่อบ้านสมัยใหม่
                 </p>
               </div>
@@ -165,7 +167,7 @@ export default function CustomMetalServicePage() {
               </div>
 
               <ConsultationButton className="w-full sm:w-auto px-8 py-3">
-                ปรึกษาและประเมินราคาฟรี
+                ปรึกษาประเมินราคาฟรี!!
               </ConsultationButton>
             </div>
           </div>

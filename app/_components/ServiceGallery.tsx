@@ -24,7 +24,7 @@ export default function ServiceGallery({
                 <p className="text-xs md:text-sm uppercase tracking-[0.1em] text-[#8f99a2] mb-3">
                     {subtitle}
                 </p>
-                <h2 className="text-3xl md:text-4xl font-semibold text-[#1f2c38]">
+                <h2 className="text-2xl md:text-3xl font-semibold text-[#1f2c38]">
                     {title}
                 </h2>
             </div>

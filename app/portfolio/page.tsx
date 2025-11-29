@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/app/_components/Navbar";
+import { ConsultationButton } from "../_components";
 
 const filterOptions = [
   { label: "All Projects", value: "all" },
@@ -88,7 +89,7 @@ export default function PortfolioPage() {
             <p className="uppercase text-xs tracking-[0.3em] text-[#b0b7be]">
               Gallery of Strength & Design
             </p>
-            <h1 className="text-3xl md:text-5xl font-semibold">Our Masterpieces</h1>
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold">Our Masterpieces</h1>
             <p className="text-lg text-[#4b5a66]">
               ผลงานความภูมิใจ... ที่เราสร้างสรรค์ด้วยความใส่ใจ ตั้งแต่งานบ้านพักอาศัย
               ไปจนถึงโครงการขนาดใหญ่ สะท้อนมาตรฐานความแข็งแกร่งและดีไซน์ที่ลงตัว
@@ -139,16 +140,15 @@ export default function PortfolioPage() {
 
         <section className="py-16 md:py-24 px-4 sm:px-6 bg-[#f0f0f2]">
           <div className="max-w-6xl mx-auto space-y-10">
-            <h2 className="text-3xl md:text-4xl font-semibold text-center">
+            <h2 className="text-2xl md:text-3xl font-semibold text-center">
               Highlight Case Studies
             </h2>
             <div className="space-y-12">
               {caseStudies.map((caseStudy, index) => (
                 <div
                   key={caseStudy.title}
-                  className={`grid gap-8 lg:grid-cols-2 items-center ${
-                    index % 2 === 1 ? "lg:[&>img]:order-2" : ""
-                  }`}
+                  className={`grid gap-8 lg:grid-cols-2 items-center ${index % 2 === 1 ? "lg:[&>img]:order-2" : ""
+                    }`}
                 >
                   <div className="relative h-72 md:h-80 w-full overflow-hidden rounded-[32px] shadow-lg">
                     <Image
@@ -190,25 +190,16 @@ export default function PortfolioPage() {
             <p className="uppercase text-xs tracking-[0.3em] text-[#f3d48c]">
               Ready to Talk?
             </p>
-            <h2 className="text-3xl md:text-4xl font-semibold">
+            <h2 className="text-2xl md:text-3xl font-semibold">
               เห็นภาพแล้ว... อยากให้เราเริ่มงานของคุณไหม?
             </h2>
             <p className="text-lg text-white/80">
               ปรึกษาและประเมินราคาเบื้องต้นได้ฟรี เราพร้อมเปลี่ยนไอเดียของคุณให้เป็นจริง
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Link
-                href="https://line.me/ti/p/~@roovtect"
-                className="rounded-full border border-[#f3d48c] px-6 py-2 text-sm font-semibold text-[#f3d48c] hover:bg-[#f3d48c] hover:text-[#0f1f2d]"
-              >
-                แอดไลน์ปรึกษาช่าง
-              </Link>
-              <Link
-                href="/smartquote"
-                className="rounded-full bg-white px-6 py-2 text-sm font-semibold text-[#0f1f2d]"
-              >
-                ดูขั้นตอนการทำงาน
-              </Link>
+              <ConsultationButton className="px-6 py-2 text-sm">
+                ปรึกษาประเมินราคาฟรี!!
+              </ConsultationButton>
             </div>
           </div>
         </section>

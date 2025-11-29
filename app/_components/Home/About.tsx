@@ -51,8 +51,8 @@ const craftsmanship = [
 
 const About = () => {
   return (
-    <section className="bg-[#f9fafb] text-[#1f2c38] px-4 sm:px-6 py-20 md:py-28">
-      <div className="max-w-6xl mx-auto space-y-20">
+    <section className="bg-[#f9fafb] text-[#1f2c38] px-4 sm:px-6 py-10 pb-20 md:py-10">
+      <div className="max-w-6xl mx-auto space-y-10">
         {/* Section 1: Philosophy */}
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="space-y-6">
@@ -116,7 +116,7 @@ const About = () => {
         </div>
 
         {/* Section 3: Craftsmanship */}
-        <div className="rounded-[36px] bg-white p-8 md:p-12 shadow-xl border border-[#e4e9ef]">
+        <div className="rounded-[36px] bg-white p-8 md:p-10 shadow-xl border border-[#e4e9ef]">
           <div className="grid gap-10 lg:grid-cols-[1fr_0.9fr] items-center">
             <div className="space-y-6">
               <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.3em] text-[#8f99a2]">

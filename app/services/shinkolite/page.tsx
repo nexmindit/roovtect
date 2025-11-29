@@ -113,10 +113,10 @@ export default function ShinkoliteServicePage() {
               Shinkolite Roofing & Canopy
             </p>
             <div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight">
                 Elegant Protection
               </h1>
-              <p className="mt-3 text-xl text-[#4b5a66]">
+              <p className="mt-3 text-lg text-[#4b5a66]">
                 สวยงาม... แต่ปกป้องดีเยี่ยม
               </p>
             </div>
@@ -141,7 +141,7 @@ export default function ShinkoliteServicePage() {
             </div>
 
             <ConsultationButton className="mt-6 w-full sm:w-auto px-8 py-3">
-              ปรึกษาและประเมินราคาฟรี
+              ปรึกษาประเมินราคาฟรี!!
             </ConsultationButton>
           </div>
 
@@ -165,8 +165,8 @@ export default function ShinkoliteServicePage() {
               Custom Metal Structures
             </p>
             <div>
-              <h2 className="text-3xl md:text-4xl font-semibold">Solid Foundation</h2>
-              <p className="mt-3 text-xl text-[#4b5a66]">
+              <h2 className="text-2xl md:text-3xl font-semibold">Solid Foundation</h2>
+              <p className="mt-3 text-lg text-[#4b5a66]">
                 รากฐานที่มั่นคงสำหรับทุกงานโครงสร้าง
               </p>
             </div>
@@ -187,14 +187,8 @@ export default function ShinkoliteServicePage() {
               ))}
             </div>
             <div className="flex flex-wrap gap-4">
-              <Link
-                href="/gallery"
-                className="rounded-full border border-[#c1a471] px-6 py-2 text-sm font-semibold text-[#c1a471] hover:bg-[#c1a471] hover:text-white transition-colors"
-              >
-                ดูผลงานโครงสร้าง
-              </Link>
               <ConsultationButton className="px-6 py-2 text-sm">
-                ปรึกษาประเมินราคา
+                ปรึกษาประเมินราคาฟรี!!
               </ConsultationButton>
             </div>
           </div>
@@ -229,8 +223,8 @@ export default function ShinkoliteServicePage() {
               Architectural Aluminum
             </p>
             <div>
-              <h2 className="text-3xl md:text-4xl font-semibold">Flawless Modernity</h2>
-              <p className="mt-3 text-xl text-[#4b5a66]">
+              <h2 className="text-2xl md:text-3xl font-semibold">Flawless Modernity</h2>
+              <p className="mt-3 text-lg text-[#4b5a66]">
                 งานอลูมิเนียมเกรดสถาปัตยกรรมไร้สนิม
               </p>
             </div>
@@ -250,14 +244,8 @@ export default function ShinkoliteServicePage() {
               ))}
             </div>
             <div className="flex flex-wrap gap-4">
-              <Link
-                href="/gallery"
-                className="rounded-full border border-[#c1a471] px-6 py-2 text-sm font-semibold text-[#c1a471] hover:bg-[#c1a471] hover:text-white transition-colors"
-              >
-                ดูผลงาน Shinkolite
-              </Link>
               <ConsultationButton className="px-6 py-2 text-sm">
-                ปรึกษาประเมินราคา
+                ปรึกษาประเมินราคาฟรี!!
               </ConsultationButton>
             </div>
           </div>

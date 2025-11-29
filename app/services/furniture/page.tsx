@@ -68,11 +68,11 @@ export default function FurnitureServicePage() {
   return (
     <>
       <Navbar />
-      <section className="bg-[#f7f7f8] text-[#1f1f25] py-16 md:py-24 px-4 sm:px-6">
-        <div className="max-w-6xl mx-auto grid gap-10 lg:gap-16 md:grid-cols-[1.05fr_0.95fr] items-center">
-          <div className="relative h-[360px] md:h-[500px] w-full overflow-hidden rounded-[40px] shadow-xl">
+      <section className="bg-[#f7f7f8] text-[#1f1f25]">
+        <div className="w-full grid md:grid-cols-2 min-h-[600px] lg:min-h-[700px]">
+          <div className="relative order-1 md:order-1 h-[400px] md:h-full w-full overflow-hidden bg-black/5">
             <Image
-              src="/feature2.jpg"
+              src="/images/services/furniture/1.png"
               alt="Industrial furniture showcase"
               fill
               className="object-cover"
@@ -81,15 +81,15 @@ export default function FurnitureServicePage() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
           </div>
 
-          <div className="space-y-6">
+          <div className="order-2 md:order-2 flex flex-col justify-center p-8 md:p-16 lg:p-24 space-y-6">
             <p className="text-xs md:text-sm uppercase tracking-[0.3em] text-[#8f99a2]">
               Furniture & Knockdown Units
             </p>
             <div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight">
                 Industrial Charm & Rapid Solutions
               </h1>
-              <p className="mt-3 text-xl text-[#4b5a66]">
+              <p className="mt-3 text-lg text-[#4b5a66]">
                 งานเหล็กผสมผสานดีไซน์... สู่เฟอร์นิเจอร์และการติดตั้งที่รวดเร็ว
               </p>
             </div>
@@ -111,14 +111,8 @@ export default function FurnitureServicePage() {
               ))}
             </div>
             <div className="flex flex-wrap gap-4">
-              <Link
-                href="/gallery"
-                className="rounded-full border border-[#c1a471] px-6 py-2 text-sm font-semibold text-[#c1a471] hover:bg-[#c1a471] hover:text-white transition-colors"
-              >
-                ดูผลงานเฟอร์นิเจอร์
-              </Link>
               <ConsultationButton className="px-6 py-2 text-sm">
-                ปรึกษาประเมินราคา
+                ปรึกษาประเมินราคาฟรี!!
               </ConsultationButton>
             </div>
           </div>
@@ -132,10 +126,10 @@ export default function FurnitureServicePage() {
               Smart Knockdown Solutions
             </p>
             <div>
-              <h2 className="text-3xl md:text-4xl font-semibold">
+              <h2 className="text-2xl md:text-3xl font-semibold">
                 สะอาด จบไว พร้อมใช้
               </h2>
-              <p className="mt-2 text-xl text-[#4b5a66]">
+              <p className="mt-2 text-lg text-[#4b5a66]">
                 งานสำเร็จรูปที่ควบคุมคุณภาพได้ตั้งแต่โรงงาน
               </p>
             </div>
@@ -161,19 +155,10 @@ export default function FurnitureServicePage() {
           </div>
 
           <div className="grid gap-4">
-            <div className="relative h-72 md:h-80 w-full overflow-hidden rounded-[32px] shadow-lg">
+            <div className="relative h-[400px] md:h-full w-full overflow-hidden rounded-[32px] shadow-lg">
               <Image
-                src="/gallery3.jpg"
+                src="/images/services/furniture/2.png"
                 alt="Industrial furniture interior"
-                fill
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
-            </div>
-            <div className="relative h-72 md:h-80 w-full overflow-hidden rounded-[32px] shadow-lg">
-              <Image
-                src="/process2.png"
-                alt="Knockdown installation process"
                 fill
                 className="object-cover"
               />

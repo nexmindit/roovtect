@@ -51,13 +51,9 @@ const slides: CarouselSlide[] = [
     description:
       "รับออกแบบและติดตั้ง กันสาด โครงป้าย เฟอร์นิเจอร์สไตล์ Loft พร้อมบริการรูปแบบน็อคดาวน์และสำเร็จรูป ยกไปติดตั้งได้ทันที",
     primaryButton: {
-      text: "ปรึกษาและประเมินราคาฟรี",
-      type: "consultation",
-    },
-    secondaryButton: {
-      text: "ชมผลงานจริง",
-      link: "/gallery",
-    },
+      text: "ปรึกษาประเมินราคาฟรี!!",
+      link: "https://lin.ee/NHJK6nl"
+    }
   },
 ];
 
@@ -188,7 +184,7 @@ export default function HeroCarousel() {
       </section>
 
       <section className="bg-[#f6f8fb] px-4 sm:px-6 py-16 md:py-20">
-        <div className="max-w-6xl mx-auto grid items-center gap-12 lg:gap-16 md:grid-cols-[1.1fr_0.9fr]">
+        <div className="max-w-6xl mx-auto grid items-center gap-12">
           <div className="bg-white rounded-[32px] p-8 md:p-10 shadow-xl ring-1 ring-white text-[#1f2c38]">
             {activeSlide?.subtitle && (
               <p className="text-xs md:text-sm uppercase tracking-0 text-[#7e8ea2]">
@@ -198,7 +194,7 @@ export default function HeroCarousel() {
 
             {activeSlide?.title && (
               <h1 className="mt-4 text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight">
-                บริการงานหลังคา Shinkolite <br/>และงานเหล็ก-สแตนเลสครบวงจร
+                บริการงานหลังคา Shinkolite และงานเหล็ก-สแตนเลสครบวงจร
               </h1>
             )}
 
@@ -272,36 +268,6 @@ export default function HeroCarousel() {
                   </p>
                 </div>
               ))}
-            </div>
-          </div>
-
-          {/* Image Card */}
-          <div className="relative">
-            <div className="absolute -top-10 -left-6 hidden lg:flex flex-col gap-1 rounded-3xl bg-white px-6 py-4 text-sm font-semibold text-[#1f2c38] shadow-xl z-20">
-              <span>Metal Roof &</span>
-              <span>Shinkolite Expert</span>
-            </div>
-            <div className="rounded-[40px] border border-white bg-white p-6 shadow-2xl">
-              <div className="mt-6 grid grid-cols-2 gap-4 text-[#1f2c38]">
-                <div>
-                  <p className="text-xs uppercase tracking-wide text-[#7e8ea2]">
-                    Solution
-                  </p>
-                  <p className="text-lg font-semibold">Shinkolite Roof</p>
-                  <p className="text-sm text-[#6b7b8c]">
-                    หลังคาอะคริลิคโปร่งแสงให้แสงธรรมชาติ
-                  </p>
-                </div>
-                <div>
-                  <p className="text-xs uppercase tracking-wide text-[#7e8ea2]">
-                    Structure
-                  </p>
-                  <p className="text-lg font-semibold">Metal & Aluminium</p>
-                  <p className="text-sm text-[#6b7b8c]">
-                    โครงสร้างแข็งแรงรับประกันความทนทาน
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>

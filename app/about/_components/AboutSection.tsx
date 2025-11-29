@@ -60,8 +60,8 @@ export default function AboutSection() {
               The Philosophy · Strength in Elegance
             </p>
             <div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
-                Power King: Master of Structure & Design
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight">
+                Power King <br/> Master of Structure & Design
               </h1>
               <p className="mt-3 text-xl text-[#4b5a66]">
                 เรื่องงานโครงสร้างและดีไซน์... ต้องยกให้เรา
