@@ -5,7 +5,12 @@ import Image from "next/image";
 import { useState, useRef } from "react";
 import ConsultationButton from "./ConsultationButton";
 
-export default function Navbar() {
+interface NavbarProps {
+  theme?: "light" | "dark";
+  transparent?: boolean;
+}
+
+export default function Navbar({ theme = "light", transparent = false }: NavbarProps) {
   const [isProductsOpen, setIsProductsOpen] = useState(false);
   const timeoutRef = useRef<number | null>(null);
 
@@ -27,18 +32,39 @@ export default function Navbar() {
     }, 200);
   };
 
+  // Determine styles based on theme
+  const isDarkTheme = theme === "dark";
+
+  // Text colors
+  const textColorClass = isDarkTheme ? "text-white hover:text-gray-200" : "text-[#314556] hover:text-[#1e2a35]";
+  const mobileMenuIconColor = isDarkTheme ? "text-white" : "text-[#314556]";
+
+  // Background
+  // If transparent is true, use transparent bg.
+  // If not transparent:
+  //   - Dark theme: bg-white/10 backdrop-blur-sm
+  //   - Light theme: sticky top-0 bg-[#DBD6D1]
+
+  let navClasses = "z-50";
+  if (isDarkTheme) {
+    navClasses += " absolute top-0 left-0 right-0";
+    navClasses += transparent ? " bg-transparent" : " bg-white/10 backdrop-blur-sm";
+  } else {
+    navClasses += " sticky top-0 bg-[#DBD6D1]";
+  }
+
   return (
-    <nav className="bg-[#DBD6D1] sticky top-0 z-50">
-      <div className="px-10 py-3">
+    <nav className={navClasses}>
+      <div className="px-10 py-3 md:py-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="shrink-0">
             <Link href="/">
               <Image
                 src="/images/logo_navbar.png"
-                alt="POWER KING Logo"
-                width={75}
-                height={30}
+                alt="Roovtect Logo"
+                width={150}
+                height={75}
                 className="h-20 w-auto"
               />
             </Link>
@@ -48,23 +74,22 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               href="/"
-              className="text-[#314556] hover:text-[#1e2a35] font-medium transition-colors"
+              className={`${textColorClass} font-medium transition-colors`}
             >
               Home
             </Link>
 
-            {/* Services Dropdown */}
+            {/* Products & Services Dropdown */}
             <div
               className="relative group"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <button className="text-[#314556] hover:text-[#1e2a35] font-medium transition-colors flex items-center">
-                Services
+              <button className={`${textColorClass} font-medium transition-colors flex items-center`}>
+                Products & Services
                 <svg
-                  className={`ml-1 w-4 h-4 transition-transform ${
-                    isProductsOpen ? "rotate-180" : ""
-                  }`}
+                  className={`ml-1 w-4 h-4 transition-transform ${isProductsOpen ? "rotate-180" : ""
+                    }`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -106,44 +131,34 @@ export default function Navbar() {
                 </div>
               )}
             </div>
-
-            <Link
-              href="/gallery"
-              className="text-[#314556] hover:text-[#1e2a35] font-medium transition-colors"
-            >
-              Gallery
-            </Link>
-
             <Link
               href="/portfolio"
-              className="text-[#314556] hover:text-[#1e2a35] font-medium transition-colors"
+              className={`${textColorClass} font-medium transition-colors`}
             >
               Portfolio
             </Link>
 
             <Link
               href="/about"
-              className="text-[#314556] hover:text-[#1e2a35] font-medium transition-colors"
+              className={`${textColorClass} font-medium transition-colors`}
             >
               About Us
             </Link>
 
             <Link
               href="/contact"
-              className="bg-[#314556] text-white px-4 py-1.5 rounded-full font-medium transition-colors hover:bg-[#1e2a35]"
+              className={`${textColorClass} font-medium transition-colors`}
             >
               Contact
             </Link>
 
-            {/* CTA Button */}
-            <ConsultationButton variant="primary" />
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
               type="button"
-              className="text-[#314556] hover:text-[#1e2a35] focus:outline-none"
+              className={`${mobileMenuIconColor} hover:text-gray-200 focus:outline-none`}
             >
               <svg
                 className="h-6 w-6"

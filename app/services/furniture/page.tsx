@@ -2,6 +2,28 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/app/_components/Navbar";
 import ConsultationButton from "@/app/_components/ConsultationButton";
+import ServiceGallery, { Project } from "@/app/_components/ServiceGallery";
+
+const projects: Project[] = [
+  {
+    name: "Industrial Table",
+    category: "Furniture",
+    location: "Cafe Amazon",
+    image: "/feature2.jpg",
+  },
+  {
+    name: "Knockdown Unit",
+    category: "Residential",
+    location: "Khao Yai",
+    image: "/gallery3.jpg",
+  },
+  {
+    name: "Loft Bench",
+    category: "Furniture",
+    location: "Bangkok",
+    image: "/process2.png",
+  },
+];
 
 const furnitureHighlights = [
   {
@@ -160,6 +182,12 @@ export default function FurnitureServicePage() {
           </div>
         </div>
       </section>
+
+      <ServiceGallery
+        title="Furniture Projects"
+        subtitle="ผลงานเฟอร์นิเจอร์"
+        projects={projects}
+      />
     </>
   );
 }

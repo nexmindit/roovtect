@@ -36,17 +36,17 @@ export default function GallerySection() {
   return (
     <section className="bg-[#f4f7fa] py-20 md:py-24 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+        <div className="flex flex-col gap-6  lg:items-center lg:justify-center">
           <div>
-            <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.3em] text-[#7e8ea2]">
+            <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.3em] text-[#7e8ea2] text-center">
               PROJECT SNAPSHOTS
             </p>
-            <h2 className="mt-4 text-3xl md:text-4xl font-semibold text-[#1f2c38]">
+            <h2 className="mt-4 text-2xl md:text-3xl font-semibold text-[#1f2c38] text-center">
               ภาพงานติดตั้งจริงที่จบคมกริบทุกดีเทล
             </h2>
           </div>
-          <p className="text-base md:text-lg text-[#4b5a66] max-w-xl">
-            รวมผลงานจริงตั้งแต่โรงจอดรถ Shinkolite โครงป้ายหน้าร้าน
+          <p className="text-base md:text-lg text-[#4b5a66] max-w-xl text-center">
+            รวมผลงานจริงตั้งแต่โรงจอดรถ Shinkolite โครงป้ายหน้าร้าน <br/>
             งานเฟอร์นิเจอร์เหล็ก และโซลูชันน็อคดาวน์ที่ขนย้ายไปติดตั้งได้ทันที
           </p>
         </div>

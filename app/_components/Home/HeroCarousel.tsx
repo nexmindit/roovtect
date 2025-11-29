@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import HeroNavbar from "./HeroNavbar";
+import Navbar from "../Navbar";
 import ConsultationButton from "../ConsultationButton";
 
 interface CarouselSlide {
@@ -104,9 +104,8 @@ export default function HeroCarousel() {
           {slides.map((slide, index) => (
             <div
               key={slide.id}
-              className={`absolute inset-0 transition-opacity duration-1000 ${
-                index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
-              }`}
+              className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
+                }`}
             >
               <Image
                 src={slide.image}
@@ -122,7 +121,7 @@ export default function HeroCarousel() {
         </div>
 
         {/* Hero Navbar Overlay */}
-        <HeroNavbar transparent />
+        <Navbar theme="dark" transparent />
 
         {/* Spacer just to keep the banner tall while showing only the image */}
         <span className="block min-h-[85vh]" aria-hidden />
@@ -176,11 +175,10 @@ export default function HeroCarousel() {
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
-                  className={`transition-all ${
-                    index === currentSlide
-                      ? "w-12 h-3 bg-white"
-                      : "w-3 h-3 bg-white/50 hover:bg-white/75"
-                  } rounded-full`}
+                  className={`transition-all ${index === currentSlide
+                    ? "w-12 h-3 bg-white"
+                    : "w-3 h-3 bg-white/50 hover:bg-white/75"
+                    } rounded-full`}
                   aria-label={`Go to slide ${index + 1}`}
                 />
               ))}
@@ -193,20 +191,20 @@ export default function HeroCarousel() {
         <div className="max-w-6xl mx-auto grid items-center gap-12 lg:gap-16 md:grid-cols-[1.1fr_0.9fr]">
           <div className="bg-white rounded-[32px] p-8 md:p-10 shadow-xl ring-1 ring-white text-[#1f2c38]">
             {activeSlide?.subtitle && (
-              <p className="text-xs md:text-sm uppercase tracking-[0.3em] text-[#7e8ea2]">
-                {activeSlide.subtitle}
+              <p className="text-xs md:text-sm uppercase tracking-0 text-[#7e8ea2]">
+                งานเหล็กจริงจัง หลังคาสวยงาม จบงานไวสไตล์ Power King
               </p>
             )}
 
             {activeSlide?.title && (
-              <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight">
-                {activeSlide.title}
+              <h1 className="mt-4 text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight">
+                บริการงานหลังคา Shinkolite <br/>และงานเหล็ก-สแตนเลสครบวงจร
               </h1>
             )}
 
             {activeSlide?.description && (
               <p className="mt-6 text-lg leading-relaxed text-[#4b5a66]">
-                {activeSlide.description}
+                รับออกแบบและติดตั้ง กันสาด โครงป้าย เฟอร์นิเจอร์สไตล์ Loft พร้อมบริการรูปแบบน็อคดาวน์และสำเร็จรูป ยกไปติดตั้งได้ทันที
               </p>
             )}
 
@@ -284,16 +282,6 @@ export default function HeroCarousel() {
               <span>Shinkolite Expert</span>
             </div>
             <div className="rounded-[40px] border border-white bg-white p-6 shadow-2xl">
-              <div className="relative h-[380px] w-full overflow-hidden rounded-[32px]">
-                <Image
-                  src={activeSlide?.image || "/images/home1.png"}
-                  alt="Roovtect modern carport"
-                  fill
-                  className="object-cover"
-                  priority
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0f1f2d]/15 via-transparent to-transparent" />
-              </div>
               <div className="mt-6 grid grid-cols-2 gap-4 text-[#1f2c38]">
                 <div>
                   <p className="text-xs uppercase tracking-wide text-[#7e8ea2]">

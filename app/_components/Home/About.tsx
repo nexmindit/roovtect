@@ -60,10 +60,10 @@ const About = () => {
               The Philosophy · Strength in Elegance
             </p>
             <div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
-                Power King: Master of Structure & Design
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight">
+                Power King  <br/>Master of Structure & Design
               </h2>
-              <p className="mt-3 text-xl text-[#4b5a66]">
+              <p className="mt-3 text-lg text-[#4b5a66]">
                 เรื่องงานโครงสร้างและดีไซน์... ต้องยกให้เรา
               </p>
             </div>
@@ -89,7 +89,7 @@ const About = () => {
           <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.3em] text-[#8f99a2]">
             Our Expertise
           </p>
-          <h3 className="text-3xl md:text-4xl font-semibold">
+          <h3 className="text-2xl md:text-3xl font-semibold">
             ความเชี่ยวชาญของเราในทุกวัสดุและดีไซน์
           </h3>
           <div className="grid gap-6 md:grid-cols-3">
@@ -122,8 +122,8 @@ const About = () => {
               <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.3em] text-[#8f99a2]">
                 Craftsmanship
               </p>
-              <h3 className="text-3xl md:text-4xl font-semibold">
-                มาตรฐานงานช่างที่พิถีพิถันในทุกรายละเอียด
+              <h3 className="text-2xl md:text-3xl font-semibold">
+                มาตรฐานงานช่างที่พิถีพิถันทุกรายละเอียด
               </h3>
               <div className="grid gap-6 md:grid-cols-3">
                 {craftsmanship.map((item) => (

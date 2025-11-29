@@ -2,6 +2,28 @@ import Image from "next/image";
 import Link from "next/link";
 import ConsultationButton from "@/app/_components/ConsultationButton";
 import Navbar from "@/app/_components/Navbar";
+import ServiceGallery, { Project } from "@/app/_components/ServiceGallery";
+
+const projects: Project[] = [
+  {
+    name: "Modern Canopy",
+    category: "Residential",
+    location: "Bangkok",
+    image: "/shinkolite/carousel1.webp",
+  },
+  {
+    name: "Glass House Extension",
+    category: "Residential",
+    location: "Nonthaburi",
+    image: "/shinkolite/carousel1.webp",
+  },
+  {
+    name: "Commercial Walkway",
+    category: "Commercial",
+    location: "Pattaya",
+    image: "/shinkolite/carousel1.webp",
+  },
+];
 
 const highlights = [
   {
@@ -84,20 +106,9 @@ export default function ShinkoliteServicePage() {
     <>
       <Navbar />
 
-      <section className="bg-[#f5f6f8] text-[#1f2c38] py-16 md:py-24 px-4 sm:px-6">
-        <div className="max-w-6xl mx-auto grid gap-10 lg:gap-16 md:grid-cols-[1.05fr_0.95fr] items-center">
-          <div className="relative h-[320px] md:h-[460px] w-full overflow-hidden rounded-[40px] shadow-xl bg-black/5">
-            <Image
-              src="/shinkolite/carousel1.webp"
-              alt="Shinkolite modern carport"
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
-          </div>
-
-          <div className="space-y-6">
+      <section className="bg-[#f5f6f8] text-[#1f2c38]">
+        <div className="w-full grid md:grid-cols-2 min-h-[600px] lg:min-h-[700px]">
+          <div className="order-2 md:order-2 flex flex-col justify-center p-8 md:p-16 lg:p-24 space-y-6">
             <p className="text-xs md:text-sm uppercase tracking-[0.3em] text-[#8f99a2]">
               Shinkolite Roofing & Canopy
             </p>
@@ -132,6 +143,17 @@ export default function ShinkoliteServicePage() {
             <ConsultationButton className="mt-6 w-full sm:w-auto px-8 py-3">
               ปรึกษาและประเมินราคาฟรี
             </ConsultationButton>
+          </div>
+
+          <div className="relative order-1 md:order-1 h-[400px] md:h-full w-full overflow-hidden bg-black/5">
+            <Image
+              src="/images/services/shinkolite/1.png"
+              alt="Shinkolite modern carport"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
           </div>
         </div>
       </section>
@@ -179,7 +201,7 @@ export default function ShinkoliteServicePage() {
 
           <div className="relative h-[360px] md:h-[480px] w-full overflow-hidden rounded-[40px] shadow-xl">
             <Image
-              src="/feature1.png"
+              src="/images/services/shinkolite/2.png"
               alt="Custom metal structure"
               fill
               className="object-cover"
@@ -193,10 +215,11 @@ export default function ShinkoliteServicePage() {
         <div className="max-w-6xl mx-auto grid gap-10 lg:gap-16 md:grid-cols-[1.05fr_0.95fr] items-center">
           <div className="relative h-[360px] md:h-[480px] w-full overflow-hidden rounded-[40px] shadow-xl">
             <Image
-              src="/feature4.webp"
+              src="/images/services/shinkolite/3.png"
               alt="Architectural aluminum gazebo"
               fill
               className="object-cover"
+              priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
           </div>
@@ -240,6 +263,12 @@ export default function ShinkoliteServicePage() {
           </div>
         </div>
       </section>
+
+      <ServiceGallery
+        title="Shinkolite Projects"
+        subtitle="ผลงาน Shinkolite ของเรา"
+        projects={projects}
+      />
     </>
   );
 }

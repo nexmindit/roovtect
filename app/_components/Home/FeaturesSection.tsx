@@ -41,16 +41,16 @@ export default function FeaturesSection() {
   return (
     <section className="bg-white py-20 md:py-24 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+        <div className="flex flex-col gap-6  lg:items-center lg:justify-center">
           <div>
-            <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.3em] text-[#7e8ea2]">
+            <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.3em] text-[#7e8ea2] text-center">
               OUR SERVICES
             </p>
-            <h2 className="mt-4 text-3xl md:text-4xl font-semibold text-[#1f2c38]">
+            <h2 className="mt-4 text-2xl md:text-3xl font-semibold text-[#1f2c38] text-center">
               บริการของเรา ครอบคลุมตั้งแต่งานหลังคาไปจนถึงเฟอร์นิเจอร์เหล็ก
             </h2>
           </div>
-          <p className="text-base md:text-lg text-[#4b5a66] max-w-xl">
+          <p className="text-center md:text-lg text-[#4b5a66] max-w-xl">
             แบ่งเป็น 3 หมวดหลัก เพื่อให้เลือกบริการได้ง่าย
             ไม่ว่าจะเป็นหลังคา Shinkolite งาน Metal & Stainless หรือเฟอร์นิเจอร์และงานน็อคดาวน์
           </p>

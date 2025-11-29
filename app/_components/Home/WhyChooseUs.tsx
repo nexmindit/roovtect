@@ -27,7 +27,7 @@ export default function WhyChooseUs() {
           <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.3em] text-[#f3d48c]">
             WHY CHOOSE US
           </p>
-          <h2 className="text-3xl md:text-4xl font-semibold">
+          <h2 className="text-2xl md:text-3xl font-semibold">
             จุดเด่นของ Power King
           </h2>
           <p className="text-base md:text-lg text-white/80 max-w-3xl">
