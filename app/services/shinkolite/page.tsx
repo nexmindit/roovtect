@@ -195,7 +195,7 @@ export default function ShinkoliteServicePage() {
 
           <div className="relative h-[360px] md:h-[480px] w-full overflow-hidden rounded-[40px] shadow-xl">
             <Image
-              src="/images/services/shinkolite/2.png"
+              src="/images/services/shinkolite/2.1.png"
               alt="Custom metal structure"
               fill
               className="object-cover"

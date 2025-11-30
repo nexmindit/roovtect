@@ -12,16 +12,16 @@ const filterOptions = [
 
 const projects = [
   {
-    name: "Modern Carport @Bangna",
+    name: "Modern Canopy",
     category: "Shinkolite Roofing",
     location: "Private Residence, Bangna",
     image: "/images/services/shinkolite/gallery/1.jpg",
   },
   {
-    name: "Loft Walkway Canopy",
+    name: "Metal Sign",
     category: "Custom Metal",
     location: "Commercial Space, Rama 9",
-    image: "/images/services/custom-metal/gallery/3.png",
+    image: "/images/services/custom-metal/gallery/3.1.png",
   },
   {
     name: "Slow Bar Loft Set",
@@ -30,19 +30,19 @@ const projects = [
     image: "/images/services/furniture/gallery/1.png",
   },
   {
-    name: "Driveway in Light",
+    name: "Walkway in Light",
     category: "Shinkolite Roofing",
     location: "Private Residence, Rama 2",
     image: "/images/services/shinkolite/gallery/3.jpg",
   },
   {
-    name: "Iconic Signage Tower",
+    name: "Metal Sign with Glass",
     category: "Custom Metal",
     location: "Restaurant, Srinakarin",
-    image: "/images/services/custom-metal/gallery/1.jpg",
+    image: "/images/services/custom-metal/gallery/1.png",
   },
   {
-    name: "Knockdown Guard House",
+    name: "Knockdown Shelf Furniture",
     category: "Furniture & Knockdown",
     location: "Modern Office, Bangkapi",
     image: "/images/services/furniture/gallery/2.png",
@@ -60,13 +60,13 @@ const caseStudies = [
     image: "/images/services/shinkolite/gallery/1.jpg",
   },
   {
-    title: "The Iconic Tower",
-    project: "ป้ายทาวเวอร์หน้าร้านอาหาร",
-    challenge: "ต้องการป้ายสูงเด่นในพื้นที่ลมแรง และต้องติดตั้งรวดเร็ว",
+    title: "ป้ายโฆษณาในห้างสรรพสินค้า",
+    project: "ป้ายโฆษณาในห้างสรรพสินค้า",
+    challenge: "ต้องการป้ายที่มองเห็นชัดและสวยงาม",
     solution:
-      "คำนวณโครงสร้างเหล็กถัก (Truss) รับแรงลม พร้อมเตรียมชิ้นงานประกอบสำเร็จจากโรงงาน 80%",
-    result: "โครงสร้างแข็งแกร่ง ติดตั้งเสร็จภายใน 2 วัน หน้างานสะอาด",
-    image: "/images/services/custom-metal/gallery/1.jpg",
+      "ออกแบบโครงสร้างป้ายให้เป็นเหล็กและมีกระจกด้านใน ทำให้ดู โมเดิร์นและลักชูรี่",
+    result: "โครงสร้างแข็งแกร่ง ติดตั้งเสร็จภายใน 1 วัน หน้างานสะอาด",
+    image: "/images/services/custom-metal/gallery/1.png",
   },
   {
     title: "Industrial Loft Space",

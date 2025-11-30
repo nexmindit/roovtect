@@ -12,6 +12,7 @@ interface NavbarProps {
 
 export default function Navbar({ theme = "light", transparent = false }: NavbarProps) {
   const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const timeoutRef = useRef<number | null>(null);
 
   const clearCloseTimeout = () => {
@@ -159,6 +160,7 @@ export default function Navbar({ theme = "light", transparent = false }: NavbarP
             <button
               type="button"
               className={`${mobileMenuIconColor} hover:text-gray-200 focus:outline-none`}
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               <svg
                 className="h-6 w-6"
@@ -169,12 +171,76 @@ export default function Navbar({ theme = "light", transparent = false }: NavbarP
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                {isMobileMenuOpen ? (
+                  <path d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path d="M4 6h16M4 12h16M4 18h16" />
+                )}
               </svg>
             </button>
           </div>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden bg-[#314556] px-4 pt-2 pb-4 space-y-1">
+          <Link
+            href="/"
+            className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-[#3d5668]"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Home
+          </Link>
+          <div className="space-y-1 pl-4">
+            <div className="px-3 py-2 text-base font-medium text-gray-300">
+              Products & Services
+            </div>
+            <Link
+              href="/services/shinkolite"
+              className="block px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-[#3d5668]"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Shinkolite Roofing & Canopy
+            </Link>
+            <Link
+              href="/services/custom-metal"
+              className="block px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-[#3d5668]"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Custom Metal & Stainless Works
+            </Link>
+            <Link
+              href="/services/furniture"
+              className="block px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-[#3d5668]"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Furniture & Knockdown Units
+            </Link>
+          </div>
+          <Link
+            href="/portfolio"
+            className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-[#3d5668]"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Portfolio
+          </Link>
+          <Link
+            href="/about"
+            className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-[#3d5668]"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            About Us
+          </Link>
+          <Link
+            href="/contact"
+            className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-[#3d5668]"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Contact
+          </Link>
+        </div>
+      )}
     </nav>
   );
 }

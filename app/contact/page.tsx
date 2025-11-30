@@ -5,8 +5,8 @@ import Navbar from "../_components/Navbar";
 const contactChannels = [
   {
     title: "LINE Official",
-    description: "แอดไลน์ส่งรูปหน้างาน หรือสอบถามเบื้องต้น",
-    button: "แอดไลน์ @PowerKing",
+    description: "แอดไลน์ส่งรูปหน้างาน หรือสอบถามเบื้องต้น ",
+    button: "สอบถามแอดไลน์",
     link: "https://lin.ee/NHJK6nl",
     icon: (
       <svg className="h-8 w-8 text-[#06C755]" viewBox="0 0 24 24" fill="currentColor">
@@ -18,8 +18,8 @@ const contactChannels = [
   {
     title: "Call Center",
     description: "ติดต่อสอบถามด่วน ช่วงเวลา 08.00 - 18.00 น.",
-    button: "โทร 02-096-3464",
-    link: "tel:020963464",
+    button: "โทร 0909723010",
+    link: "tel:0909723010",
     icon: (
       <svg className="h-8 w-8 text-[#1f2c38]" viewBox="0 0 24 24" fill="none">
         <path
@@ -36,8 +36,8 @@ const contactChannels = [
   {
     title: "Project Submission",
     description: "สำหรับส่งไฟล์ CAD, PDF หรือแบบดีไซน์เพื่อประเมินราคา",
-    button: "Email: contact@powerking.com",
-    link: "mailto:contact@powerking.com",
+    button: "Email: powerkingsteel@gmail.com",
+    link: "mailto:powerkingsteel@gmail.com",
     icon: (
       <svg className="h-8 w-8 text-[#1f2c38]" viewBox="0 0 24 24" fill="none">
         <path
@@ -49,7 +49,7 @@ const contactChannels = [
         />
       </svg>
     ),
-    variant: "ghost",
+    variant: "outline",
   },
 ];
 
@@ -118,7 +118,7 @@ export default function ContactPage() {
                 Power King Office & Workshop
               </p>
               <h2 className="text-2xl md:text-3xl font-semibold">
-                เลขที่ xxx/xx ถนน... แขวง... เขต... กทม. xxxxx
+                7 ถ.พุทธบูชา แขวงบางมด บางมด เขตทุ่งครุ กรุงเทพมหานคร 10140
               </h2>
               <div className="space-y-3 text-sm text-[#4b5a66]">
                 {trustBadges.map((badge) => (
@@ -128,15 +128,7 @@ export default function ContactPage() {
               <p className="text-sm text-[#4b5a66]">มีที่จอดรถสำหรับลูกค้าที่เข้ามาติดต่อ</p>
             </div>
             <div className="space-y-4">
-              <iframe
-                title="Power King Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.2239!2d100.467!3d13.6587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d603531111111%3APowerKing!5e0!3m2!1sth!2sth!4v0000000000"
-                width="100%"
-                height="380"
-                allowFullScreen
-                loading="lazy"
-                className="rounded-[32px] border-0 shadow"
-              />
+              <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d432.58173536602055!2d100.47219009896503!3d13.654503650621885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDM5JzE1LjkiTiAxMDDCsDI4JzE5LjYiRQ!5e0!3m2!1sth!2sin!4v1764510771189!5m2!1sth!2sin" width="600" height="450" style={{border:0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
               <p className="text-sm text-[#4b5a66] text-center">
                 มีที่จอดรถสำหรับลูกค้าที่เข้ามาติดต่อ
               </p>
