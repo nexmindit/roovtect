@@ -15,37 +15,37 @@ const projects = [
     name: "Modern Carport @Bangna",
     category: "Shinkolite Roofing",
     location: "Private Residence, Bangna",
-    image: "/gallery1.png",
+    image: "/images/services/shinkolite/gallery/1.jpg",
   },
   {
     name: "Loft Walkway Canopy",
     category: "Custom Metal",
     location: "Commercial Space, Rama 9",
-    image: "/feature1.png",
+    image: "/images/services/custom-metal/gallery/3.png",
   },
   {
     name: "Slow Bar Loft Set",
     category: "Furniture & Knockdown",
     location: "Cafe, Ekkamai",
-    image: "/gallery3.jpg",
+    image: "/images/services/furniture/gallery/1.png",
   },
   {
     name: "Driveway in Light",
     category: "Shinkolite Roofing",
     location: "Private Residence, Rama 2",
-    image: "/shinkolite/carousel2.webp",
+    image: "/images/services/shinkolite/gallery/3.jpg",
   },
   {
     name: "Iconic Signage Tower",
     category: "Custom Metal",
     location: "Restaurant, Srinakarin",
-    image: "/feature1.png",
+    image: "/images/services/custom-metal/gallery/1.jpg",
   },
   {
     name: "Knockdown Guard House",
     category: "Furniture & Knockdown",
     location: "Modern Office, Bangkapi",
-    image: "/process2.png",
+    image: "/images/services/furniture/gallery/2.png",
   },
 ];
 
@@ -57,7 +57,7 @@ const caseStudies = [
     solution:
       "ออกแบบโครงสร้างเหล็กแบบยื่น Cantilever ใช้แผ่น Shinkolite รุ่นกันความร้อนสี Modern Grey",
     result: "พื้นที่หน้าบ้านโปร่ง โล่ง สบายตา และลดอุณหภูมิได้จริง",
-    image: "/gallery1.png",
+    image: "/images/services/shinkolite/gallery/1.jpg",
   },
   {
     title: "The Iconic Tower",
@@ -66,7 +66,7 @@ const caseStudies = [
     solution:
       "คำนวณโครงสร้างเหล็กถัก (Truss) รับแรงลม พร้อมเตรียมชิ้นงานประกอบสำเร็จจากโรงงาน 80%",
     result: "โครงสร้างแข็งแกร่ง ติดตั้งเสร็จภายใน 2 วัน หน้างานสะอาด",
-    image: "/feature1.png",
+    image: "/images/services/custom-metal/gallery/1.jpg",
   },
   {
     title: "Industrial Loft Space",
@@ -75,7 +75,7 @@ const caseStudies = [
     solution:
       "ชุดโต๊ะบาร์ขาเหล็กสีดำด้าน ท็อปไม้เก่าขัดเสี้ยน พร้อมชั้นวางของเหล็กฉีก",
     result: "ได้บรรยากาศดิบเท่ แข็งแรงทนทานต่อการใช้งานหนัก",
-    image: "/gallery3.jpg",
+    image: "/images/services/furniture/gallery/1.png",
   },
 ];
 
