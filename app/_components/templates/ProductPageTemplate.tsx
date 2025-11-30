@@ -103,9 +103,8 @@ export default function ProductPageTemplate({
             {heroImages.map((src, index) => (
               <div
                 key={index}
-                className={`absolute inset-0 transition-opacity duration-1000 ${
-                  index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
-                }`}
+                className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
+                  }`}
               >
                 <Image
                   src={src}
@@ -164,11 +163,10 @@ export default function ProductPageTemplate({
                     <button
                       key={index}
                       onClick={() => goToSlide(index)}
-                      className={`transition-all rounded-full shadow-sm ${
-                        index === currentSlide
+                      className={`transition-all rounded-full shadow-sm ${index === currentSlide
                           ? "w-8 h-2 bg-white"
                           : "w-2 h-2 bg-white/60 hover:bg-white"
-                      }`}
+                        }`}
                     />
                   ))}
                 </div>
@@ -411,7 +409,13 @@ export default function ProductPageTemplate({
 
               <div className="md:w-4/5 grid grid-cols-2 md:grid-cols-4 gap-4">
                 {relatedProducts.map((product, index) => (
-                  <Link href={product.link} key={index} className="group">
+                  <Link
+                    href={product.link}
+                    key={index}
+                    className="group"
+                    target={product.link.startsWith("http") ? "_blank" : undefined}
+                    rel={product.link.startsWith("http") ? "noopener noreferrer" : undefined}
+                  >
                     <div className="relative w-full aspect-square overflow-hidden mb-3">
                       <Image
                         src={product.image}

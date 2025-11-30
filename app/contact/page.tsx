@@ -97,11 +97,13 @@ export default function ContactPage() {
                 </div>
                 <Link
                   href={channel.link}
+                  target={channel.link.startsWith("http") ? "_blank" : undefined}
+                  rel={channel.link.startsWith("http") ? "noopener noreferrer" : undefined}
                   className={`block text-center rounded-full px-4 py-2 text-sm font-semibold ${channel.variant === "primary"
-                      ? "bg-[#06C755] text-white"
-                      : channel.variant === "outline"
-                        ? "border border-[#1f2c38] text-[#1f2c38]"
-                        : "border border-[#d5d9dc] text-[#4b5a66]"
+                    ? "bg-[#06C755] text-white"
+                    : channel.variant === "outline"
+                      ? "border border-[#1f2c38] text-[#1f2c38]"
+                      : "border border-[#d5d9dc] text-[#4b5a66]"
                     }`}
                 >
                   {channel.button}
@@ -128,7 +130,7 @@ export default function ContactPage() {
               <p className="text-sm text-[#4b5a66]">มีที่จอดรถสำหรับลูกค้าที่เข้ามาติดต่อ</p>
             </div>
             <div className="space-y-4">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d432.58173536602055!2d100.47219009896503!3d13.654503650621885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDM5JzE1LjkiTiAxMDDCsDI4JzE5LjYiRQ!5e0!3m2!1sth!2sin!4v1764510771189!5m2!1sth!2sin" width="600" height="450" style={{border:0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d432.58173536602055!2d100.47219009896503!3d13.654503650621885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDM5JzE1LjkiTiAxMDDCsDI4JzE5LjYiRQ!5e0!3m2!1sth!2sin!4v1764510771189!5m2!1sth!2sin" width="600" height="450" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
               <p className="text-sm text-[#4b5a66] text-center">
                 มีที่จอดรถสำหรับลูกค้าที่เข้ามาติดต่อ
               </p>
