@@ -9,19 +9,19 @@ const projects: Project[] = [
     name: "Steel Signage Tower",
     category: "Commercial",
     location: "Bangkok",
-    image: "/feature1.png",
+    image: "/images/services/custom-metal/gallery/1.jpg",
   },
   {
     name: "Stainless Detail",
     category: "Architectural",
     location: "Samut Prakan",
-    image: "/feature2.jpg",
+    image: "/images/services/custom-metal/gallery/2.jpg",
   },
   {
     name: "Custom Structure",
     category: "Industrial",
     location: "Rayong",
-    image: "/feature1.png",
+    image: "/images/services/custom-metal/gallery/3.png",
   },
 ];
 

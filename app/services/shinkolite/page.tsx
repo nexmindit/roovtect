@@ -9,19 +9,19 @@ const projects: Project[] = [
     name: "Modern Canopy",
     category: "Residential",
     location: "Bangkok",
-    image: "/shinkolite/carousel1.webp",
+    image: "/images/services/shinkolite/gallery/1.jpg",
   },
   {
     name: "Glass House Extension",
     category: "Residential",
     location: "Nonthaburi",
-    image: "/shinkolite/carousel1.webp",
+    image: "/images/services/shinkolite/gallery/2.jpg",
   },
   {
     name: "Commercial Walkway",
     category: "Commercial",
     location: "Pattaya",
-    image: "/shinkolite/carousel1.webp",
+    image: "/images/services/shinkolite/gallery/3.jpg",
   },
 ];
 

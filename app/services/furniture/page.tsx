@@ -9,19 +9,19 @@ const projects: Project[] = [
     name: "Industrial Table",
     category: "Furniture",
     location: "Cafe Amazon",
-    image: "/feature2.jpg",
+    image: "/images/services/furniture/gallery/1.png",
   },
   {
     name: "Knockdown Unit",
     category: "Residential",
     location: "Khao Yai",
-    image: "/gallery3.jpg",
+    image: "/images/services/furniture/gallery/2.png",
   },
   {
     name: "Loft Bench",
     category: "Furniture",
     location: "Bangkok",
-    image: "/process2.png",
+    image: "/images/services/furniture/gallery/3.png",
   },
 ];
 
