@@ -138,7 +138,7 @@ const About = () => {
             </div>
             <div className="relative h-[280px] w-full overflow-hidden rounded-[28px] bg-[#f3f4f6]">
               <Image
-                src="/feature1.png"
+                src="/images/home/craftmanship-image.png"
                 alt="Detail welding craftsmanship"
                 fill
                 className="object-cover"

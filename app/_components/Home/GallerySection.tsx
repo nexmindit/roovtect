@@ -11,7 +11,7 @@ const galleryImages = [
   },
   {
     id: 2,
-    src: "/feature1.png",
+    src: "/images/home/2.png",
     alt: "Custom Sign Structure",
     title: "Custom Sign Structure",
     description: "ภาพงานโครงป้ายหน้าร้าน",
@@ -25,7 +25,7 @@ const galleryImages = [
   },
   {
     id: 4,
-    src: "/process2.png",
+    src: "/images/home/1.png",
     alt: "Knockdown Delivery",
     title: "Knockdown Delivery",
     description: "ภาพการขนย้ายงานน็อคดาวน์ไปติดตั้ง",

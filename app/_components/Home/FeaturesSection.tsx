@@ -15,7 +15,7 @@ const featuresData = [
   },
   {
     id: 2,
-    imageSrc: "/feature1.png",
+    imageSrc: "/images/home/service-2.png",
     title: "Custom Metal & Stainless Works",
     subtitle: "งานสั่งทำ เหล็กและสแตนเลส",
     points: [
