@@ -4,8 +4,8 @@ import { Geist, Geist_Mono, Kanit } from "next/font/google";
 import "./globals.css";
 import Footer from "./_components/Footer";
 
-import { GoogleAnalytics } from '@next/third-parties/google'
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +24,8 @@ const kanit = Kanit({
 });
 
 export const metadata: Metadata = {
-  title: "POWERKING รับทำโครงเหล็ก หลังคาโรงรถ สแตนเลส โครงป้าย โดยช่างมืออาชีพ",
+  title:
+    "POWERKING รับทำโครงเหล็ก หลังคาโรงรถ สแตนเลส โครงป้าย โดยช่างมืออาชีพ",
   description:
     "POWERKING ผู้เชี่ยวชาญด้านงานโครงเหล็ก โครงสแตนเลส รับทำหลังคาโรงรถ กันสาด และโครงป้ายโฆษณา ออกแบบและติดตั้งโดยทีมช่างมืออาชีพ แข็งแรง ทนทาน งานดีไซน์สวย ราคาคุ้มค่า ปรึกษาฟรี",
   keywords: [
@@ -56,25 +57,39 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GoogleTagManager gtmId="GTM-MKDWTZL2" />
+      <Script
+        id="next"
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=G-PMKSK5QMYD`}
+      />
+      <Script id="next">
+        {`window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-PMKSK5QMYD');`}
+      </Script>
+      <Script id="google-ads-conversion">
+        {`
+          function gtag_report_conversion(url) {
+            var callback = function () {
+              if (typeof(url) != 'undefined') {
+                window.location = url;
+              }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-17770256522/QHKeCNL_ntEbEIqxwplC',
+                'value': 1.0,
+                'currency': 'THB',
+                'event_callback': callback
+            });
+            return false;
+          }
+        `}
+      </Script>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${kanit.variable} antialiased`}
       >
-        
-        {children}       
-      
-        
-          <Script id="next"
-                async
-                src={`https://www.googletagmanager.com/gtag/js?id=G-PMKSK5QMYD`}
-          />
-          <Script id="next">
-                {
-                    `window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                    gtag('config', 'G-PMKSK5QMYD');`
-                }
-          </Script>
+        {children}
       </body>
     </html>
   );
