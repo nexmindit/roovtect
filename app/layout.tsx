@@ -3,6 +3,7 @@ import Script from "next/script";
 import { Geist, Geist_Mono, Kanit } from "next/font/google";
 import "./globals.css";
 import Footer from "./_components/Footer";
+import FloatingCTA from "./_components/FloatingCTA";
 
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { GoogleTagManager } from "@next/third-parties/google";
@@ -56,40 +57,56 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="GTM-MKDWTZL2" />
-      <Script
-        id="next"
-        async
-        src={`https://www.googletagmanager.com/gtag/js?id=G-PMKSK5QMYD`}
-      />
-      <Script id="next">
-        {`window.dataLayer = window.dataLayer || [];
+      <head>
+        <GoogleTagManager gtmId="GTM-MKDWTZL2" />
+        {/* Google Analytics */}
+        <Script
+          id="ga-gtag-loader"
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-PMKSK5QMYD"
+        />
+        <Script id="ga-gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-PMKSK5QMYD');`}
-      </Script>
-      <Script id="google-ads-conversion">
-        {`
-          function gtag_report_conversion(url) {
-            var callback = function () {
-              if (typeof(url) != 'undefined') {
-                window.location = url;
-              }
-            };
-            gtag('event', 'conversion', {
+            gtag('config', 'G-PMKSK5QMYD');
+          `}
+        </Script>
+        {/* Google Ads Conversion - Load gtag.js for Google Ads */}
+        <Script
+          id="google-ads-gtag-loader"
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17770256522"
+        />
+        <Script id="google-ads-conversion" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('config', 'AW-17770256522');
+            
+            window.gtag_report_conversion = function(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+              };
+              gtag('event', 'conversion', {
                 'send_to': 'AW-17770256522/QHKeCNL_ntEbEIqxwplC',
                 'value': 1.0,
                 'currency': 'THB',
                 'event_callback': callback
-            });
-            return false;
-          }
-        `}
-      </Script>
+              });
+              return false;
+            };
+          `}
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${kanit.variable} antialiased`}
       >
         {children}
+        <FloatingCTA />
       </body>
     </html>
   );
