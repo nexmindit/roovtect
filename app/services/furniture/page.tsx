@@ -47,7 +47,7 @@ const knockdownHighlights = [
   {
     title: "Zero Disturbance",
     description:
-      '“ลดฝุ่น ลดเสียง ลดเวลา” หน้างานสะอาด จบงานไว พร้อมใช้งานทันทีไม่รบกวนเพื่อนบ้าน',
+      "“ลดฝุ่น ลดเสียง ลดเวลา” หน้างานสะอาด จบงานไว พร้อมใช้งานทันทีไม่รบกวนเพื่อนบ้าน",
   },
 ];
 
@@ -59,8 +59,18 @@ const SmallIcon = () => (
     strokeWidth={1.5}
     viewBox="0 0 24 24"
   >
-    <circle cx="12" cy="12" r="9" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M8.5 12.5 11 14.5 15.5 9" strokeLinecap="round" strokeLinejoin="round" />
+    <circle
+      cx="12"
+      cy="12"
+      r="9"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M8.5 12.5 11 14.5 15.5 9"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
   </svg>
 );
 
@@ -70,7 +80,7 @@ export default function FurnitureServicePage() {
       <Navbar />
       <section className="bg-[#f7f7f8] text-[#1f1f25]">
         <div className="w-full grid md:grid-cols-2 min-h-[600px] lg:min-h-[700px]">
-          <div className="relative order-1 md:order-1 h-[400px] md:h-full w-full overflow-hidden bg-black/5">
+          <div className="relative order-1 md:order-1 aspect-[16/11] md:aspect-auto md:h-full w-full overflow-hidden bg-black/5">
             <Image
               src="/images/services/furniture/1.png"
               alt="Industrial furniture showcase"
@@ -94,10 +104,11 @@ export default function FurnitureServicePage() {
               </p>
             </div>
             <p className="text-lg leading-relaxed text-[#4b5a66]">
-              Power King เปลี่ยนงานเหล็กที่แข็งกระด้างให้กลายเป็นงานดีไซน์ที่มีชีวิตชีวา
-              เราใส่ใจตั้งแต่การออกแบบเฟอร์นิเจอร์ลอยตัว ไปจนถึงงานโครงสร้างสำเร็จรูป
-              (Knockdown) ที่ผลิตเสร็จจากโรงงาน เพื่อให้ตอบโจทย์ความสวยงาม ความรวดเร็ว
-              และหน้างานที่สะอาดเรียบร้อย
+              Power King
+              เปลี่ยนงานเหล็กที่แข็งกระด้างให้กลายเป็นงานดีไซน์ที่มีชีวิตชีวา
+              เราใส่ใจตั้งแต่การออกแบบเฟอร์นิเจอร์ลอยตัว
+              ไปจนถึงงานโครงสร้างสำเร็จรูป (Knockdown) ที่ผลิตเสร็จจากโรงงาน
+              เพื่อให้ตอบโจทย์ความสวยงาม ความรวดเร็ว และหน้างานที่สะอาดเรียบร้อย
             </p>
             <div className="space-y-4">
               {furnitureHighlights.map((item) => (

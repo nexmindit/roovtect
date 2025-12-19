@@ -38,8 +38,7 @@ const highlights = [
   },
   {
     title: "Heat & UV Block",
-    description:
-      "กรองแสงและกันความร้อนได้เยี่ยม บ้านจึงเย็นสบายแม้อยู่กลางแดด",
+    description: "กรองแสงและกันความร้อนได้เยี่ยม บ้านจึงเย็นสบายแม้อยู่กลางแดด",
   },
   {
     title: "Versatile Use",
@@ -92,7 +91,13 @@ const SmallIcon = () => (
     strokeWidth={1.5}
     viewBox="0 0 24 24"
   >
-    <circle cx="12" cy="12" r="9" strokeLinecap="round" strokeLinejoin="round" />
+    <circle
+      cx="12"
+      cy="12"
+      r="9"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
     <path
       d="M8.5 12.5 11 14.5 15.5 9"
       strokeLinecap="round"
@@ -121,8 +126,9 @@ export default function ShinkoliteServicePage() {
               </p>
             </div>
             <p className="text-lg leading-relaxed text-[#4b5a66]">
-              Shinkolite Roofing & Canopy คือคำตอบสำหรับพื้นที่ที่ต้องการความโปร่ง
-              หรู และกันความร้อนในเวลาเดียวกัน เราคัดสรรแผ่นอะคริลิกเกรดพรีเมียม
+              Shinkolite Roofing & Canopy
+              คือคำตอบสำหรับพื้นที่ที่ต้องการความโปร่ง หรู
+              และกันความร้อนในเวลาเดียวกัน เราคัดสรรแผ่นอะคริลิกเกรดพรีเมียม
               ผสานกับโครงสร้างสีดำสนิทหรือสีโมเดิร์นตามสไตล์บ้าน
               เพื่อให้ทุกองศาดูพรีเมียมและปลอดภัย
             </p>
@@ -145,7 +151,7 @@ export default function ShinkoliteServicePage() {
             </ConsultationButton>
           </div>
 
-          <div className="relative order-1 md:order-1 h-[400px] md:h-full w-full overflow-hidden bg-black/5">
+          <div className="relative order-1 md:order-1 aspect-[16/11] md:aspect-auto md:h-full w-full overflow-hidden bg-black/5">
             <Image
               src="/images/services/shinkolite/1.png"
               alt="Shinkolite modern carport"
@@ -165,14 +171,16 @@ export default function ShinkoliteServicePage() {
               Custom Metal Structures
             </p>
             <div>
-              <h2 className="text-2xl md:text-3xl font-semibold">Solid Foundation</h2>
+              <h2 className="text-2xl md:text-3xl font-semibold">
+                Solid Foundation
+              </h2>
               <p className="mt-3 text-lg text-[#4b5a66]">
                 รากฐานที่มั่นคงสำหรับทุกงานโครงสร้าง
               </p>
             </div>
             <p className="text-lg leading-relaxed text-[#4b5a66]">
-              เหมาะสำหรับงานโครงสร้างหลักที่ต้องการความแข็งแรงสูง ไม่ว่าจะเป็นลานอเนกประสงค์
-              โครงกันสาดระแนง หรือโครงการเชิงพาณิชย์
+              เหมาะสำหรับงานโครงสร้างหลักที่ต้องการความแข็งแรงสูง
+              ไม่ว่าจะเป็นลานอเนกประสงค์ โครงกันสาดระแนง หรือโครงการเชิงพาณิชย์
               เรามีทีมงานที่เชี่ยวชาญงานเหล็กและสแตนเลสทั้งด้านวิศวกรรมและงานศิลป์
             </p>
             <div className="space-y-4">
@@ -223,14 +231,17 @@ export default function ShinkoliteServicePage() {
               Architectural Aluminum
             </p>
             <div>
-              <h2 className="text-2xl md:text-3xl font-semibold">Flawless Modernity</h2>
+              <h2 className="text-2xl md:text-3xl font-semibold">
+                Flawless Modernity
+              </h2>
               <p className="mt-3 text-lg text-[#4b5a66]">
                 งานอลูมิเนียมเกรดสถาปัตยกรรมไร้สนิม
               </p>
             </div>
             <p className="text-lg leading-relaxed text-[#4b5a66]">
-              โครงสร้างอลูมิเนียมช่วยยกระดับความมินิมอลด้วยเส้นสายที่คมชัด น้ำหนักเบา
-              และปลอดสนิม เหมาะกับ Glass House ศาลาพักผ่อน หรือกันสาดทรงโมเดิร์น
+              โครงสร้างอลูมิเนียมช่วยยกระดับความมินิมอลด้วยเส้นสายที่คมชัด
+              น้ำหนักเบา และปลอดสนิม เหมาะกับ Glass House ศาลาพักผ่อน
+              หรือกันสาดทรงโมเดิร์น
             </p>
             <div className="space-y-4">
               {aluminumHighlights.map((item) => (

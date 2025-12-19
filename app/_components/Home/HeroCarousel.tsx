@@ -24,8 +24,6 @@ interface CarouselSlide {
   };
 }
 
-
-
 const slides: CarouselSlide[] = [
   {
     id: 1,
@@ -37,8 +35,8 @@ const slides: CarouselSlide[] = [
       "รับออกแบบและติดตั้ง กันสาด โครงป้าย เฟอร์นิเจอร์สไตล์ Loft พร้อมบริการรูปแบบน็อคดาวน์และสำเร็จรูป ยกไปติดตั้งได้ทันที",
     primaryButton: {
       text: "ปรึกษาประเมินราคาฟรี!!",
-      link: "https://lin.ee/NHJK6nl"
-    }
+      link: "https://lin.ee/NHJK6nl",
+    },
   },
 ];
 
@@ -98,14 +96,15 @@ export default function HeroCarousel() {
 
   return (
     <>
-      <section className="relative h-[50vh] sm:h-[60vh] md:min-h-screen w-full overflow-hidden flex items-center justify-center">
+      <section className="relative aspect-[16/11] md:aspect-auto md:min-h-screen w-full overflow-visible md:overflow-hidden flex items-center justify-center">
         {/* Background Images */}
         <div className="absolute inset-0">
           {slides.map((slide, index) => (
             <div
               key={slide.id}
-              className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
-                }`}
+              className={`absolute inset-0 transition-opacity duration-1000 ${
+                index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
+              }`}
             >
               {/* Desktop Image */}
               <div className="hidden md:block absolute inset-0">
@@ -133,11 +132,9 @@ export default function HeroCarousel() {
         </div>
 
         {/* Hero Navbar Overlay */}
-        <div className="absolute top-0 left-0 right-0 z-50">
+        <div className="absolute top-0 left-0 right-0 z-[100]">
           <Navbar theme="dark" transparent />
         </div>
-
-
 
         {/* Navigation Arrows */}
         {slides.length > 1 && (
@@ -188,10 +185,11 @@ export default function HeroCarousel() {
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
-                  className={`transition-all ${index === currentSlide
-                    ? "w-12 h-3 bg-white shadow-lg"
-                    : "w-3 h-3 bg-white/50 hover:bg-white/80"
-                    } rounded-full`}
+                  className={`transition-all ${
+                    index === currentSlide
+                      ? "w-12 h-3 bg-white shadow-lg"
+                      : "w-3 h-3 bg-white/50 hover:bg-white/80"
+                  } rounded-full`}
                   aria-label={`Go to slide ${index + 1}`}
                 />
               ))}
@@ -217,15 +215,16 @@ export default function HeroCarousel() {
 
             {activeSlide?.description && (
               <p className="mt-6 text-lg leading-relaxed text-[#4b5a66]">
-                รับออกแบบและติดตั้ง กันสาด โครงป้าย เฟอร์นิเจอร์สไตล์ Loft พร้อมบริการรูปแบบน็อคดาวน์และสำเร็จรูป ยกไปติดตั้งได้ทันที
+                รับออกแบบและติดตั้ง กันสาด โครงป้าย เฟอร์นิเจอร์สไตล์ Loft
+                พร้อมบริการรูปแบบน็อคดาวน์และสำเร็จรูป ยกไปติดตั้งได้ทันที
               </p>
             )}
 
             {/* Buttons */}
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <ConsultationButton className="px-6 py-2 text-sm">
-                              ปรึกษาประเมินราคาฟรี!!
-                            </ConsultationButton>
+                ปรึกษาประเมินราคาฟรี!!
+              </ConsultationButton>
             </div>
 
             {/* Highlights */}

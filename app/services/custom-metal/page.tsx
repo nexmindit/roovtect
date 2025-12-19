@@ -85,8 +85,9 @@ export default function CustomMetalServicePage() {
                 </p>
               </div>
               <p className="text-lg leading-relaxed text-[#555b63]">
-                เราไม่ได้มองงานเหล็กและสแตนเลสเป็นเพียงวัสดุก่อสร้าง
-                แต่คือ &quot;งานศิลปะเชิงวิศวกรรม&quot; Power King พร้อมรับความท้าทายทุกโปรเจกต์
+                เราไม่ได้มองงานเหล็กและสแตนเลสเป็นเพียงวัสดุก่อสร้าง แต่คือ
+                &quot;งานศิลปะเชิงวิศวกรรม&quot; Power King
+                พร้อมรับความท้าทายทุกโปรเจกต์
                 ตั้งแต่งานตกแต่งไปจนถึงโครงสร้างขนาดใหญ่
                 ด้วยการควบคุมคุณภาพทุกมิลลิเมตรและการเก็บงานที่ประณีตที่สุด
               </p>
@@ -98,8 +99,12 @@ export default function CustomMetalServicePage() {
                   <p className="text-xs uppercase tracking-[0.2em] text-[#c2a678]">
                     {service.title}
                   </p>
-                  <h3 className="text-xl font-semibold mt-1">{service.subtitle}</h3>
-                  <p className="mt-2 text-sm text-[#555b63]">{service.description}</p>
+                  <h3 className="text-xl font-semibold mt-1">
+                    {service.subtitle}
+                  </h3>
+                  <p className="mt-2 text-sm text-[#555b63]">
+                    {service.description}
+                  </p>
                 </div>
               ))}
             </div>
@@ -107,10 +112,9 @@ export default function CustomMetalServicePage() {
             <ConsultationButton className="w-full sm:w-auto px-8 py-3">
               ปรึกษาประเมินราคาฟรี!!
             </ConsultationButton>
-
           </div>
 
-          <div className="relative h-[400px] lg:h-full w-full overflow-hidden">
+          <div className="relative aspect-[16/11] lg:aspect-auto lg:h-full w-full overflow-hidden">
             <Image
               src="/images/services/custom-metal/1.1.png"
               alt="Steel signage tower"
@@ -151,8 +155,10 @@ export default function CustomMetalServicePage() {
               </div>
               <p className="text-lg leading-relaxed text-[#555b63]">
                 ยกระดับความมินิมอลไปอีกขั้นด้วยโครงสร้างอลูมิเนียมคุณภาพสูง
-                น้ำหนักเบาแต่แข็งแรง ตอบโจทย์งานต่อเติมที่ต้องการความเนี้ยบของเส้นสาย
-                และความสะอาดตาของหน้างาน พร้อมรองรับการติดตั้งกระจกหรือแผ่นโปร่งแสงได้ทุกรูปแบบ
+                น้ำหนักเบาแต่แข็งแรง
+                ตอบโจทย์งานต่อเติมที่ต้องการความเนี้ยบของเส้นสาย
+                และความสะอาดตาของหน้างาน
+                พร้อมรองรับการติดตั้งกระจกหรือแผ่นโปร่งแสงได้ทุกรูปแบบ
               </p>
 
               <div className="space-y-4">
@@ -161,7 +167,9 @@ export default function CustomMetalServicePage() {
                     <p className="text-xs uppercase tracking-[0.2em] text-[#c2a678]">
                       {item.title}
                     </p>
-                    <p className="mt-1 text-sm text-[#555b63]">{item.description}</p>
+                    <p className="mt-1 text-sm text-[#555b63]">
+                      {item.description}
+                    </p>
                   </div>
                 ))}
               </div>
